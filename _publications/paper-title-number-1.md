@@ -10,6 +10,6 @@ citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 
 ---
 This paper focuses on the use of computers for language learning.
 
-[Download paper here](http://academicpages.github.io/files/paper1.pdf)
+[Download paper here](http://sahiltchaudhary.github.io/files/paper1.pdf)
 
 Recommended citation: Chaudhary, S. T., & Devi, V. A. (2019). Benefit of Computer Assisted Language Learning (Call).
