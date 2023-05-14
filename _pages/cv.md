@@ -19,8 +19,7 @@ Work experience
 * Intern - Maruti Suzuki India Limited, Gurgaon, Haryana, India
   * Trainee in Energy Auditing and Management
   * Special focus on Boilers
-  * Learnt how to evaluate the performance of Boilers
-  * Learnt how to improve the efficiency of Boilers
+  * Learnt how to improve the efficiency and evaluate the performance of Boilers
   * Documented my learnings as a Report, and presented the same
 
 * GET - ArcelorMittal Nippon Steel India Limited, Hazira, Gujarat, India
