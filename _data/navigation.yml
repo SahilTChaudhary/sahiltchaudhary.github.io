@@ -20,3 +20,9 @@ main:
     
 #  - title: "Guide"
 #    url: /markdown/
+
+  - title: "Education"
+    url: /education/
+
+  - title: "Industry Experience"
+    url: /industryexperience/
