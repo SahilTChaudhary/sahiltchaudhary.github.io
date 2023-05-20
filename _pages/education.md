@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-<p><h3><span style="text-align:left; display:inline-block; width:50%;">Carnegie Mellon University</span><span style="text-align:right; display:inline-block; width:50%;">Aug 2023 - Dec 2024</span></h3></p>
+<p><h3><span style="text-align:left; display:inline-block; width:50%;">Carnegie Mellon University, Pittsburgh</span><span style="text-align:right; display:inline-block; width:50%;">Aug 2023 - Dec 2024</span></h3></p>
 
   *  GPA -  
   *  Relevant Course Work - 
