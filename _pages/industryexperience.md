@@ -16,6 +16,7 @@ redirect_from:
   * Ensured the smooth running of different processes such as conveyors, skip charging, material charging and discharging, coal blending, coal drying, slag granulation plant, and machinery involved in all the areas within Material Handling
   * Assisted and collaborated with Field Engineers to resolve problems such as malfunctioning, errors or issues with  the equipment and machinery, ensuring safety, and productivity of the Plant
   * Worked as a Process Engineer to control the various parameters of the process, hence ensuring quality
+  
 ---
 * <h2>Maruti Suzuki India Limited, Gurgaon, Haryana, India</h2>
   <h3>Intern (Jul 2021 - Sep 2021)</h3>
