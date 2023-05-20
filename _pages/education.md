@@ -9,8 +9,6 @@ redirect_from:
 
 {% include base_path %}
 
-# Education
-======
 ## Carnegie Mellon University                         Aug 2023 - Dec 2024
 ---
 * M.Sc in Mechanical Engineering with concentration in Robotics and Controls

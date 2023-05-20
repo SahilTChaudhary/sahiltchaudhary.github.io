@@ -9,8 +9,6 @@ redirect_from:
 
 {% include base_path %}
 
-# Work experience
-======
 ## ArcelorMittal Nippon Steel India Limited, Hazira, Gujarat, India
 ---
 ### Graduate Engineer Trainee (Jun 2022 - Mar 2023)
