@@ -17,7 +17,7 @@ collection: portfolio
     <div style="text-align:center">
     <img src="/images/Quad_project_render_1.png" alt="Robot_Render" style="width:700px;height:300px;">
     </div>
-    <figcaption style="text-align: center;"><u><em>Fig-1 Render Image of the robot</em></u></figcaption>
+    <figcaption style="text-align: center;"><u><em>Fig-1 Rendered Image of the robot</em></u></figcaption>
   
     * <p style="text-align: justify;"><b>Motivation</b><br>The goal of the project was to re-create the leg design to increase the workspace of the robot's legs. Legged robots, which are robots designed with legs instead of wheels, have become increasingly important in recent years. One of the main advantages of legged robots is their ability to navigate complex and uneven terrain, making them ideal for applications such as search and rescue, exploration, and inspection of hazardous environments. Additionally, legged robots can be used for tasks that require greater dexterity and mobility, such as manipulating objects or interacting with humans. Legged robots can also operate in environments where wheeled robots or other types of vehicles may be unable to operate, such as rocky or steep terrain, or in disaster-stricken areas with debris on the ground.</p>
     
