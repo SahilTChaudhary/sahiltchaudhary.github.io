@@ -9,6 +9,9 @@ redirect_from:
 
 {% include base_path %}
 
+<figure>
+  <img src="/images/AMNS_Logo.png" alt="AM/NS Logo" style="width:100px;height:200px;">
+  </figure>
 * <h2>ArcelorMittal Nippon Steel India Limited, Hazira, Gujarat, India</h2>
   <h3>Graduate Engineer Trainee (Jun 2022 - Mar 2023)</h3>
   * Core Skills - Communication, Teamwork, Cross-Team Collaboration, Multitasking, Problem Identification and Solving
@@ -18,6 +21,9 @@ redirect_from:
   * Worked as a Process Engineer to control the various parameters of the process, hence ensuring quality
   
 ---
+<figure>
+  <img src="/images/MS_Logo.png" alt="Maruti Suzuki Logo" style="width:100px;height:200px;">
+  </figure>
 * <h2>Maruti Suzuki India Limited, Gurgaon, Haryana, India</h2>
   <h3>Intern (Jul 2021 - Sep 2021)</h3>
   * Core Skills - Report Writing, Presentation Skills, Communication
