@@ -15,7 +15,7 @@ collection: portfolio
     *  <p style="text-align: justify;"><b>Introduction</b><br>The idea behind the project was to design and create a Re-Sizeable Floor Cleaning Robot. Automated floor cleaning robots are commonly employed in smart homes, residential, and office spaces to clean the floors. According to a world market study, there is a strong demand for the application of these robots in domestic settings with fully automated functionalities and the least amount of human assistance, and while these robots still account for a small percentage of the global vacuum cleaner market, their recognition and implementation is growing at a rapid rate. The robots are small and execute the cleaning operation without the need for human participation. These robots use motion planning algorithms to cover a large area while cleaning, such as spiral motion, backtracking spiral motion, boustrophedon motion (back and forth), and basic zig-zag motion patterns.</p>
 
     <div style="text-align:center">
-    <img src="/images/resizeableRobotRender.png" alt="Robot_Render" style="width:700px;height:300px;">
+    <img src="/images/resizeableRobotRender.png" alt="Robot_Render" style="width:600px;height:300px;">
     </div>
     <figcaption style="text-align: center;"><u><em>Fig-1 Rendered Image of the robot</em></u></figcaption>
   
