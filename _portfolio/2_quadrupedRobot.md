@@ -28,7 +28,7 @@ collection: portfolio
     
     * <p style="text-align: justify;"><b>Mechanical Design</b><br>The figure above shows the new design of the leg used. This was done to provide the robot with a higher order of workspace, while also maintaining the capabilities of the current design. Furthermore, legged robots have the potential to significantly reduce the environmental impact of transportation. Compared to traditional wheeled vehicles, legged robots have a lower ground pressure, which means they can traverse delicate ecosystems without causing damage. They also consume less energy, making them more environmentally friendly than traditional vehicles. In the future, legged robots may be used for last-mile delivery, reducing the need for carbon-emitting trucks and vans. Overall, legged robots have a wide range of potential applications and offer a flexible and adaptable platform for various tasks. Their ability to navigate complex environments, interact with humans, and reduce environmental impact make them an important area of research and development.
     
-    * <p style="text-align: justify;">The kinematic analysis and the mathematical calculations behind the robot can be found on [[Notion]](https://common-bathtub-ada.notion.site/Quadrupled-Project-5025fb31b81147499df83d656a3e7b42).</p>
+    * <p style="text-align: justify;">The kinematic analysis and the mathematical calculations behind the robot can be found on <b>[Notion](https://common-bathtub-ada.notion.site/Quadrupled-Project-5025fb31b81147499df83d656a3e7b42)</b>.</p>
 
     <div style="text-align:center">
     <video src="/images/Quad_project_simulation_1.mp4" controls="controls" style="max-width: 750px;"></video>
