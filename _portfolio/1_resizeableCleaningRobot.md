@@ -4,22 +4,22 @@ excerpt: "Designed and developed a Floor Cleaning Robot that can adjust its size
 collection: portfolio
 ---
 
-[[GitHub]](https://github.com/SahilTChaudhary/Re-Sizeable-Autonomous-Cleaning-Robot)
+[[GitHub]](https://github.com/SahilTChaudhary/Re-Sizeable-Autonomous-Cleaning-Robot)[[Report]](http://sahiltchaudhary.github.io/files/resizeableRobReport.pdf)
 
-* <b>Tech Stack:</b> Python (PyBullet), ROS, SolidWorks, MATLAB, Simulink (Robotics Toolbox), GitHub
+* <b>Tech Stack:</b> Python, CoppeliaSim (V-REP), Fusion 360, Ansys, GitHub, Raspberry Pi 4
 * <b> Summary </b>
-    -  <p style="text-align: justify;">Created a CAD design and prototype of a Quadruped walking robot and implemented yaw, pitch and roll as a team of four students; implemented trot, canter and pace gait to analyse the performance and stability of different gaits.</p>
-    -  <p style="text-align: justify;">Redesigned the legs of the Quadruped robot making it capable of performing backflips; conducted kinematic workspace analysis of the robot and using Inverse Kinematics, equation of motions, Simulink and PyBullet for animations.</p>
+    -  <p style="text-align: justify;">Developed a CAD model of a Floor Cleaning Robot that can adjust its size depending on need, as a team lead of three students. The actuation mechanism utilised a Ball Screw Linear Actuator.</p>
+    -  <p style="text-align: justify;">Conducted a Simulation study using V-REP, and also developed a Functional Prototype using Raspberry Pi 4 and various sensors to demonstrate the efficacy of the system.</p>
 
 * <b>In-Depth</b>
-    *  <p style="text-align: justify;"><b>Introduction</b><br>The idea behind the project was to redesign and create a new leg design for Quadruped robots, which are robots designed with four legs and have several practical applications. They can navigate difficult terrain and environments that are inaccessible to wheeled or bipedal robots, making them useful for tasks such as search and rescue operations or exploration of rough terrain. Quadruped robots can also be used for inspection and maintenance of industrial equipment and infrastructure, as well as for agricultural applications such as herding livestock and monitoring crops. In addition, the stability provided by four legs makes Quadruped robots well-suited for tasks that require high precision and stability, such as carrying and manipulating heavy objects.</p>
+    *  <p style="text-align: justify;"><b>Introduction</b><br>The idea behind the project was to design and create a Re-Sizeable Floor Cleaning Robot. Automated floor cleaning robots are commonly employed in smart homes, residential, and office spaces to clean the floors. According to a world market study, there is a strong demand for the application of these robots in domestic settings with fully automated functionalities and the least amount of human assistance, and while these robots still account for a small percentage of the global vacuum cleaner market, their recognition and implementation is growing at a rapid rate. The robots are small and execute the cleaning operation without the need for human participation. These robots use motion planning algorithms to cover a large area while cleaning, such as spiral motion, backtracking spiral motion, boustrophedon motion (back and forth), and basic zig-zag motion patterns.</p>
 
     <div style="text-align:center">
     <img src="/images/Quad_project_render_1.png" alt="Robot_Render" style="width:700px;height:300px;">
     </div>
     <figcaption style="text-align: center;"><u><em>Fig-1 Render Image of the robot</em></u></figcaption>
   
-    * <p style="text-align: justify;"><b>Motivation</b><br>The goal of the project was to re-create the leg design to increase the workspace of the robot's legs. Legged robots, which are robots designed with legs instead of wheels, have become increasingly important in recent years. One of the main advantages of legged robots is their ability to navigate complex and uneven terrain, making them ideal for applications such as search and rescue, exploration, and inspection of hazardous environments. Additionally, legged robots can be used for tasks that require greater dexterity and mobility, such as manipulating objects or interacting with humans. Legged robots can also operate in environments where wheeled robots or other types of vehicles may be unable to operate, such as rocky or steep terrain, or in disaster-stricken areas with debris on the ground.</p>
+    * <p style="text-align: justify;"><b>Motivation</b><br>The goal of the project was to design a re-sizeable cleaning robot that can extend its length, allowing it to cover a larger area in a single sweep, and can also reduce its size to reach inaccessible areas. Cleaning robots are available in a variety of sizes and can clean a specific area in a single sweep. However, the cleaning efficiency and effectiveness can be improved. In open places with little impediment, such as broad halls and living rooms, cleaning can be done quickly by sweeping a larger area in a single sweep. Furthermore, by reducing its length, the robot can clean otherwise inaccessible areas, for example between two pieces of furniture that are close to each other.</p>
     
     <div style="text-align:center">
     <img src="/images/Quad_project_Leg_Redesign.png" alt="Robot_Render" style="width:550px;height:300px;">
@@ -41,4 +41,4 @@ collection: portfolio
     </div>
     <figcaption style="text-align: center;"><u><em>Simulation-2 Motion capabilities of the Robot</em></u></figcaption>
 
-    * <p style="text-align: justify;"><b>Results</b><br>The simulations above show to final output of the projects depicting the capabilities of the robot. It can also be observed that the robot is fully capable of dropping down to the much lower height as the limbs are out of plane for the robot. This increases the mobility in robot in cramped and low lying ares. It can also be noted that the robot is able to maintain the same functionality as before without the increase in any additional constraints due to the redesigning of the legs. </p>
+    * <p style="text-align: justify;"><b>Results</b><br>A simulation study has been demonstrated to verify the efficacy of the system. Further, a functional prototype has been developed as a proof of concept to test the system in the real world. The results above show that the robot can effectively adjust its size depending on need, without affecting mobility and structural integrity of the chassis. Several iterations were required to attain a chassis that was performing well. Earlier iterations of the functional prototype suffered from bending of the chassis and loss of traction to the wheels. Having identified the problem areas, necessary modifications were made to the chassis to ensure compliance.  Future work will involve integrating SLAM using LIDAR, for more efficient and systematic cleaning.</p>
