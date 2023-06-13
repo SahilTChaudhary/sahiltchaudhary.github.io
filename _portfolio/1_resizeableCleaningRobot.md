@@ -48,9 +48,7 @@ collection: portfolio
     <img src="/images/LinearActuatorCircuit.png" alt="LA_Circuit" style="width:550px;height:300px;">
     </div>
     <figcaption style="text-align: center;"><u><em>Fig-5 Linear Actuator Circuit</em></u></figcaption>
----    
-
----
+  
 
     <div style="text-align:center">
     <video src="/images/resizeableRobot_working_model.mp4" controls="controls" style="max-width: 750px;"></video>
