@@ -15,9 +15,14 @@ collection: portfolio
     *  <p style="text-align: justify;"><b>Introduction</b><br>The idea behind the project was to design and develop a cost-effective Prosthetic Arm. The cost was reduced by using less material to make the structure of the arm. Topology Optimization was performed to determine the non-critical portions of the structure, and hence remove them. This reduced the material used and hence reduced the cost. The prototype was made using 3-D Printing and Raspberry Pi 4.</p>
 
     <div style="text-align:center">
-    <img src="/images/resizeableRobotRender.png" alt="Robot_Render" style="width:600px;height:300px;">
+    <img src="/images/ProstheticArm.png" alt="Robot_Render" style="width:600px;height:300px;">
     </div>
-    <figcaption style="text-align: center;"><u><em>Fig-1 Rendered Image of the robot</em></u></figcaption>
+    <figcaption style="text-align: center;"><u><em>Fig-1 Rendered Image of the Prosthetic Arm</em></u></figcaption>
+
+    <div style="text-align:center">
+    <img src="/images/ProstheticArm_Topo.png" alt="Robot_Render" style="width:600px;height:300px;">
+    </div>
+    <figcaption style="text-align: center;"><u><em>Fig-2 Rendered Image of the Prosthetic Arm after Topology Optimization</em></u></figcaption>
   
     * <p style="text-align: justify;"><b>Motivation</b><br>The goal of the project was to design a cost-effective Prosthetic Arm. Prosthetic Arms can get quite expensive, and are hence beyond the reach of the general masses. Thus, this motivated us to try and reduce the cost of such arms, so that it becomes more accessible to people.</p>
     
@@ -25,16 +30,26 @@ collection: portfolio
     * <p style="text-align: justify;"><b>Mechanical Design</b><br>The components of the Prosthetic Arm were made using 3-D Printing. It has 6 Degrees of Freedom. Each finger is attached to a servo motor via a tendon. Once a motor actuates, it pulls on the tendon, creating tension, which causes the corresponding finger to move. The individual digits of each finger cannot be actuated separately, and the entire finger moves as whole. The wrist joint is controlled via a sixth servo motor, and is connected via a 1:1 gear. The motors receive signals from the user's arm, via an Electromyography (EMG) sensor, which senses electrical impulses sent from our brain to muscles in the body.</p>
 
     <div style="text-align:center">
-    <img src="/images/resizeableRobot_Mechanism.gif" alt="Actuation_Mechanism" style="width:550px;height:300px;">
+    <video src="/images/ArmStressAnalysis_vonMises.png" controls="controls" style="max-width: 750px;"></video>
     </div>
-    <figcaption style="text-align: center;"><u><em>Fig-2 Actuation Mechanism</em></u></figcaption>
+    <figcaption style="text-align: center;"><u><em>Fig-3 The Forearm after Topology Optimization</em></u></figcaption>
+
+    <div style="text-align:center">
+    <video src="/images/ArmStressAnalysis_Displacement.png" controls="controls" style="max-width: 750px;"></video>
+    </div>
+    <figcaption style="text-align: center;"><u><em>Fig-4 The Forearm after Topology Optimization</em></u></figcaption>
 
     * <p style="text-align: justify;"><b>Topology Optimization</b><br>Topology Optimization was done to reduce the material used. The criteria used were to minimise mass by 30%, and ensure that the displacement does not increase by more than 1.2 times. The forearm and the hand were optimized, as they were the largest and most promiment components of the arm, and were also the main load bearing parts of the arm. The total mass reduction was 17.35%.</p>
 
     <div style="text-align:center">
-    <video src="/images/resizeableRobot_working_model.mp4" controls="controls" style="max-width: 750px;"></video>
+    <video src="/images/Forearm_Topo.png" controls="controls" style="max-width: 750px;"></video>
     </div>
-    <figcaption style="text-align: center;"><u><em>Functional Prototype demonstration</em></u></figcaption>
+    <figcaption style="text-align: center;"><u><em>Fig-5 The Forearm after Topology Optimization</em></u></figcaption>
+
+    <div style="text-align:center">
+    <video src="/images/Hand_Topo.png" controls="controls" style="max-width: 750px;"></video>
+    </div>
+    <figcaption style="text-align: center;"><u><em>Fig-6 The Hand after Topology Optimization</em></u></figcaption>
 
 * <b>Results</b>
     <p>Topology Optimization was successfully used to reduce the material cost of the arm. However, considering that the arm has been 3-D Printed using ABS, it is relatively weak, and can only be utilized for manipulating light objects like soda cans, stationery etc. Strength can be improved by either changing the material, or changing the manufacturing method, both of which will increase cost.</p>
