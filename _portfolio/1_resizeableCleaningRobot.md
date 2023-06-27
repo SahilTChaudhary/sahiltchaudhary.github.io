@@ -53,7 +53,7 @@ collection: portfolio
     <div style="text-align:center">
     <video src="/images/resizeableRobot_working_model.mp4" controls="controls" style="max-width: 750px;"></video>
     </div>
-    <figcaption style="text-align: center;"><u><em>Functional Prototype demonstration</em></u></figcaption>+
+    <figcaption style="text-align: center;"><u><em>Functional Prototype demonstration</em></u></figcaption>
 
 * <b>Results</b>
     <p>A simulation study has been demonstrated to verify the efficacy of the system. Further, a functional prototype has been developed as a proof of concept to test the system in the real world. The results above show that the robot can effectively adjust its size depending on need, without affecting mobility and structural integrity of the chassis. Several iterations were required to attain a chassis that was performing well. Earlier iterations of the functional prototype suffered from bending of the chassis and loss of traction to the wheels. Having identified the problem areas, necessary modifications were made to the chassis to ensure compliance.  Future work will involve integrating SLAM using LIDAR, for more efficient and systematic cleaning.</p>
