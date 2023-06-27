@@ -4,15 +4,37 @@ excerpt: "Did Topology Optimization to reduce the material cost of a Prosthetic 
 collection: portfolio
 ---
 
-**Work Done**
-* Designed the CAD model using Fusion 360
-* Did Topology Optimization using Fusion 360
-* Conducted Static Structural Analysis using Ansys
-* Created the .stl files, imported them into Ultimaker Cura, did Slicing and generated the G-Code for 3-D 
-* Printing via FDM using PLA as the chosen material
-* The arm is limited to the forearm 
-* The arm can handle a load of 1kg with a Factor of Safety of 5
+[[GitHub]](https://github.com/SahilTChaudhary/Prosthetic-Arm.git)
 
-_Helped me develop my leadership, CAD and CAE skills, and also learn about Prosthetics as it is an upcoming technology with a huge scope._
+* <b>Tech Stack:</b> SolidWorks, Additive Manufacturing, Raspberry Pi 4, GitHub
+* <b> Summary </b>
+    -  <p style="text-align: justify;">Developed a CAD model and functional prototype of a cost-effective Prosthetic Arm using Additive Manufacturing.</p>
+    -  <p style="text-align: justify;">Performed Topology Optimization using SolidWorks to reduce the material cost.</p>
 
-<br/><img src='/images/ProstheticArm.png'>
+* <b>In-Depth</b>
+    *  <p style="text-align: justify;"><b>Introduction</b><br>The idea behind the project was to design and develop a cost-effective Prosthetic Arm. The cost was reduced by using less material to make the structure of the arm. Topology Optimization was performed to determine the non-critical portions of the structure, and hence remove them. This reduced the material used and hence reduced the cost. The prototype was made using 3-D Printing and Raspberry Pi 4.</p>
+
+    <div style="text-align:center">
+    <img src="/images/resizeableRobotRender.png" alt="Robot_Render" style="width:600px;height:300px;">
+    </div>
+    <figcaption style="text-align: center;"><u><em>Fig-1 Rendered Image of the robot</em></u></figcaption>
+  
+    * <p style="text-align: justify;"><b>Motivation</b><br>The goal of the project was to design a cost-effective Prosthetic Arm. Prosthetic Arms can get quite expensive, and are hence beyond the reach of the general masses. Thus, this motivated us to try and reduce the cost of such arms, so that it becomes more accessible to people.</p>
+    
+       
+    * <p style="text-align: justify;"><b>Mechanical Design</b><br>The components of the Prosthetic Arm were made using 3-D Printing. It has 6 Degrees of Freedom. Each finger is attached to a servo motor via a tendon. Once a motor actuates, it pulls on the tendon, creating tension, which causes the corresponding finger to move. The individual digits of each finger cannot be actuated separately, and the entire finger moves as whole. The wrist joint is controlled via a sixth servo motor, and is connected via a 1:1 gear. The motors receive signals from the user's arm, via an Electromyography (EMG) sensor, which senses electrical impulses sent from our brain to muscles in the body.</p>
+
+    <div style="text-align:center">
+    <img src="/images/resizeableRobot_Mechanism.gif" alt="Actuation_Mechanism" style="width:550px;height:300px;">
+    </div>
+    <figcaption style="text-align: center;"><u><em>Fig-2 Actuation Mechanism</em></u></figcaption>
+
+    * <p style="text-align: justify;"><b>Topology Optimization</b><br>Topology Optimization was done to reduce the material used. The criteria used were to minimise mass by 30%, and ensure that the displacement does not increase by more than 1.2 times. The forearm and the hand were optimized, as they were the largest and most promiment components of the arm, and were also the main load bearing parts of the arm. The total mass reduction was 17.35%.</p>
+
+    <div style="text-align:center">
+    <video src="/images/resizeableRobot_working_model.mp4" controls="controls" style="max-width: 750px;"></video>
+    </div>
+    <figcaption style="text-align: center;"><u><em>Functional Prototype demonstration</em></u></figcaption>
+
+* <b>Results</b>
+    <p>Topology Optimization was successfully used to reduce the material cost of the arm. However, considering that the arm has been 3-D Printed using ABS, it is relatively weak, and can only be utilized for manipulating light objects like soda cans, stationery etc. Strength can be improved by either changing the material, or changing the manufacturing method, both of which will increase cost.</p>

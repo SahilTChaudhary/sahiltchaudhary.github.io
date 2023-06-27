@@ -8,7 +8,7 @@ collection: portfolio
 
 * <b>Tech Stack:</b> Python (PyBullet), ROS, SolidWorks, MATLAB, Simulink (Robotics Toolbox), GitHub
 * <b> Summary </b>
-    -  <p style="text-align: justify;">Develpoed a CAD model and prototype of a Quadruped walking robot and implemented yaw, pitch and roll as a team of four students; implemented trot, canter and pace gait to analyse the performance and stability of different gaits.</p>
+    -  <p style="text-align: justify;">Developed a CAD model and prototype of a Quadruped walking robot and implemented yaw, pitch and roll as a team of four students; implemented trot, canter and pace gait to analyse the performance and stability of different gaits.</p>
     -  <p style="text-align: justify;">Redesigned the legs of the Quadruped robot making it capable of performing backflips; conducted kinematic workspace analysis of the robot and using Inverse Kinematics, equation of motions, Simulink and PyBullet for animations.</p>
 
 * <b>In-Depth</b>
@@ -41,4 +41,5 @@ collection: portfolio
     </div>
     <figcaption style="text-align: center;"><u><em>Simulation-2 Motion capabilities of the Robot</em></u></figcaption>
 
-    * <p style="text-align: justify;"><b>Results</b><br>The simulations above show the final output of the project depicting the capabilities of the robot. It can also be observed that the robot is fully capable of dropping down to a much lower height as the limbs are out of plane of the robot. This increases the mobility of the robot in cramped and low lying areas. It can also be noted that the robot is able to maintain the same functionality as before without the increase in any additional constraints due to the redesigning of the legs. </p>
+* <b>Results</b>
+    <p>The simulations above show the final output of the project depicting the capabilities of the robot. It can also be observed that the robot is fully capable of dropping down to a much lower height as the limbs are out of plane of the robot. This increases the mobility of the robot in cramped and low lying areas. It can also be noted that the robot is able to maintain the same functionality as before without the increase in any additional constraints due to the redesigning of the legs.</p>
