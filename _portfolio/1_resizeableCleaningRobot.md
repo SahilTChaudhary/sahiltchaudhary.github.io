@@ -1,6 +1,6 @@
 ---
 title: "Re-Sizeable Autonomous Cleaning Robot"
-excerpt: "Designed and developed a Floor Cleaning Robot that can adjust its size depending on need. <br/><img src='/images/CleaningRobot.png'>"
+excerpt: "Designed and developed a Floor Cleaning Robot that can adjust its size depending on need. <br/><img src='/images/resizeableRobotRender.png' alt="Robot_Render" style="width:300px;height:150px;"><br/><img src='/images/resizeableRobot_Prototype.png' alt="Robot_Render" style="width:300px;height:150px;">"
 collection: portfolio
 ---
 
@@ -18,6 +18,11 @@ collection: portfolio
     <img src="/images/resizeableRobotRender.png" alt="Robot_Render" style="width:600px;height:300px;">
     </div>
     <figcaption style="text-align: center;"><u><em>Fig-1 Rendered Image of the robot</em></u></figcaption>
+
+    <div style="text-align:center">
+    <img src="/images/resizeableRobot_Prototype.png" alt="Robot_Render" style="width:600px;height:300px;">
+    </div>
+    <figcaption style="text-align: center;"><u><em>Fig-2 Functional Prototype of the robot</em></u></figcaption>
   
     * <p style="text-align: justify;"><b>Motivation</b><br>The goal of the project was to design a re-sizeable cleaning robot that can extend its length, allowing it to cover a larger area in a single sweep, and can also reduce its size to reach inaccessible areas. Cleaning robots are available in a variety of sizes and can clean a specific area in a single sweep. However, the cleaning efficiency and effectiveness can be improved. In open places with little impediment, such as broad halls and living rooms, cleaning can be done quickly by sweeping a larger area in a single sweep. Furthermore, by reducing its length, the robot can clean otherwise inaccessible areas, for example between two pieces of furniture that are close to each other.</p>
     
@@ -29,7 +34,7 @@ collection: portfolio
     <div style="text-align:center">
     <img src="/images/resizeableRobot_Mechanism.gif" alt="Actuation_Mechanism" style="width:550px;height:300px;">
     </div>
-    <figcaption style="text-align: center;"><u><em>Fig-2 Actuation Mechanism</em></u></figcaption>
+    <figcaption style="text-align: center;"><u><em>Fig-3 Actuation Mechanism</em></u></figcaption>
 
 
     * <p style="text-align: justify;"><b>Circuit Design</b><br>The components used are Ultrasonic sensors, camera, four wheel motors, a Ball Screw Actuator, and the Raspberry Pi 4. Representative circuit diagrams are given below.</p>
@@ -37,17 +42,17 @@ collection: portfolio
     <div style="text-align:center">
     <img src="/images/UltrasonicCircuit.png" alt="US_Circuit" style="width:550px;height:300px;">
     </div>
-    <figcaption style="text-align: center;"><u><em>Fig-3 Ultrasonic Sensor Circuit</em></u></figcaption>
+    <figcaption style="text-align: center;"><u><em>Fig-4 Ultrasonic Sensor Circuit</em></u></figcaption>
 
     <div style="text-align:center">
     <img src="/images/WheelCircuit.png" alt="Wheel_Circuit" style="width:550px;height:300px;">
     </div>
-    <figcaption style="text-align: center;"><u><em>Fig-4 Wheel Motors Circuit</em></u></figcaption>
+    <figcaption style="text-align: center;"><u><em>Fig-5 Wheel Motors Circuit</em></u></figcaption>
 
     <div style="text-align:center">
     <img src="/images/LinearActuatorCircuit.png" alt="LA_Circuit" style="width:550px;height:300px;">
     </div>
-    <figcaption style="text-align: center;"><u><em>Fig-5 Linear Actuator Circuit</em></u></figcaption>
+    <figcaption style="text-align: center;"><u><em>Fig-6 Linear Actuator Circuit</em></u></figcaption>
   
 
     <div style="text-align:center">
