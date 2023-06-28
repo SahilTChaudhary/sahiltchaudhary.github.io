@@ -1,6 +1,6 @@
 ---
 title: "Re-Sizeable Autonomous Cleaning Robot"
-excerpt: "Designed and developed a Floor Cleaning Robot that can adjust its size depending on need. <br/><img src='/images/resizeableRobotRender.png' alt="Robot_Render" style="width:300px;height:150px;"><br/><img src='/images/resizeableRobot_Prototype.png' alt="Robot_Render" style="width:300px;height:150px;">"
+excerpt: "Designed and developed a Floor Cleaning Robot that can adjust its size depending on need. <br/><img src='/images/resizeableRobotRender.png' alt="Robot_Render" style="width:300px;height:150px;"> <img src='/images/resizeableRobot_Prototype.png' alt="Functional_Prototype" style="width:300px;height:150px;">"
 collection: portfolio
 ---
 
@@ -20,7 +20,7 @@ collection: portfolio
     <figcaption style="text-align: center;"><u><em>Fig-1 Rendered Image of the robot</em></u></figcaption>
 
     <div style="text-align:center">
-    <img src="/images/resizeableRobot_Prototype.png" alt="Robot_Render" style="width:600px;height:300px;">
+    <img src="/images/resizeableRobot_Prototype.png" alt="Functional_Prototype" style="width:600px;height:300px;">
     </div>
     <figcaption style="text-align: center;"><u><em>Fig-2 Functional Prototype of the robot</em></u></figcaption>
   
