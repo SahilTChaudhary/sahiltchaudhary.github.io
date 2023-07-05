@@ -39,7 +39,7 @@ collection: portfolio
     </div>
     <figcaption style="text-align: center;"><u><em>Fig-4 Stress Analysis - Displacement</em></u></figcaption>
 
-    * <p style="text-align: justify;"><b>Topology Optimization</b><br>Topology Optimization was done to reduce the material used. The criteria used were to minimise mass by 30%, and ensure that the displacement does not increase by more than 1.2 times. The forearm and the hand were optimized, as they were the largest and most promiment components of the arm, and were also the main load bearing parts of the arm. The total mass reduction was 17.35%.</p>
+    * <p style="text-align: justify;"><b>Stress and Failure Analysis</b><br>Static Structural Analysis and Rigid Body Dynamics study were conducted using Ansys. Static Structural Analysis was conducted considering Bearing Loads, Direct Force and Joint Moment. Induced Stress, Total Deformation and Fatigue Life were determined. The analyses were done using two materials - Carbon Steel and Aluminium Alloy.</p>
 
     <div style="text-align:center">
     <img src="/images/Forearm_Topo.png" controls="Topo" style="max-width: 750px;">
@@ -52,4 +52,4 @@ collection: portfolio
     <figcaption style="text-align: center;"><u><em>Fig-6 The Hand after Topology Optimization</em></u></figcaption>
 
 * <b>Results</b>
-    <p>Topology Optimization was successfully used to reduce the material cost of the arm. However, considering that the arm has been 3-D Printed using ABS, it is relatively weak, and can only be utilized for manipulating light objects like soda cans, stationery etc. Strength can be improved by either changing the material, or changing the manufacturing method, both of which will increase cost.</p>
+    <p>The stress analyses and simulations show that the Treadmill will not fail. Analyses were done using two materials, Carbon Steel and Aluminium Alloy. The Fatigue Life Analysis showed that both the materials have infinite life cycle under the applied load of 1000N (assuming a person of weight 100kg is operating the treadmill). Hence, Fatigue failure due to Completely Reversed Loads is not a criterion for concern. Furthermore, neither of the materials fail, as the induced stresses are less than their yield stresses. Motion loads were also analysed, with both materials faring well. However, Total Deformation in the Aluminium Rollers was almost 10mm, as compared to 2mm in the Steel Rollers, which is intuitively correct as Steel is stronger than Aluminium. Hence, it was decided to used Steel for the Rollers, and Aluminium for the body and frame.</p>
