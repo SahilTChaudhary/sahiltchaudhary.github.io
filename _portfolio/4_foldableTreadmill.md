@@ -1,11 +1,11 @@
 ---
 title: "Compact Foldable Treadmill"
-excerpt: "Designed and developed a Compact and Foldable Treadmill in Fusion 360. <br/><img src='/images/Treadmill.png'>"
+excerpt: "Designed and developed a Compact and Foldable Treadmill in SolidWorks. <br/><img src='/images/Treadmill.png'>"
 collection: portfolio
 ---
 
 **Work Done**
-* Designed the CAD model using Fusion 360
+* Designed the CAD model using SolidWorks
 * Calculated the applied Impulse Load and Failure Load, and conducted Static Structural Analysis using Ansys
 * Designed a folding mechanism for the treadmill by folding the deck in half for easy storage
 * The Treadmill is a manual one aimed at walking, with an inclination of 15° to facilitate easy movement
