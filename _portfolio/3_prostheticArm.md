@@ -6,7 +6,7 @@ collection: portfolio
 
 [[GitHub]](https://github.com/SahilTChaudhary/Prosthetic-Arm.git)
 
-* <b>Tech Stack:</b> SolidWorks, Additive Manufacturing, Raspberry Pi 4, Python, GitHub
+* <b>Tech Stack:</b> SolidWorks, Additive Manufacturing, Raspberry Pi 4, Python
 * <b> Summary </b>
     -  <p style="text-align: justify;">Developed a CAD model and functional prototype of a cost-effective Prosthetic Arm using Additive Manufacturing.</p>
     -  <p style="text-align: justify;">Performed Topology Optimization using SolidWorks to reduce the material cost.</p>

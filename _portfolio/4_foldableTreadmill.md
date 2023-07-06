@@ -6,7 +6,7 @@ collection: portfolio
 
 [[GitHub]](https://github.com/SahilTChaudhary/Compact-Foldable-Treadmill.git)
 
-* <b>Tech Stack:</b> SolidWorks, Ansys, GitHub
+* <b>Tech Stack:</b> SolidWorks, Ansys
 * <b> Summary </b>
     -  <p style="text-align: justify;">Developed a CAD model and designed the folding mechanism of the Treadmill using SolidWorks.</p>
     -  <p style="text-align: justify;">Conducted Static Structural Analysis and Rigid Body Dynamics study using Ansys to optimize the materials used.</p>

@@ -6,7 +6,7 @@ collection: portfolio
 
 [[GitHub]](https://github.com/SahilTChaudhary/Re-Sizeable-Autonomous-Cleaning-Robot)[[Report]](http://sahiltchaudhary.github.io/files/resizeableRobReport.pdf)
 
-* <b>Tech Stack:</b> Python, CoppeliaSim (V-REP), Fusion 360, Ansys, GitHub, Raspberry Pi 4
+* <b>Tech Stack:</b> Python, CoppeliaSim (V-REP), Fusion 360, Ansys, Raspberry Pi 4
 * <b> Summary </b>
     -  <p style="text-align: justify;">Developed a CAD model of a Floor Cleaning Robot that can adjust its size depending on need, as a team lead of three students. The actuation mechanism utilised a Ball Screw Linear Actuator.</p>
     -  <p style="text-align: justify;">Conducted a Simulation study using V-REP, and also developed a Functional Prototype using Raspberry Pi 4 and various sensors to demonstrate the efficacy of the system.</p>
