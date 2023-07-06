@@ -10,7 +10,7 @@ redirect_from:
 {% include base_path %}
 
 <figure>
-  <img src="/images/AMNS_Logo.png" alt="AM/NS Logo" style="width:250px;height:200px;">
+  <img src="/images/AMNS_Logo.png" alt="AM/NS Logo" style="width:350px;height:200px;">
   </figure>
 * <h2>ArcelorMittal Nippon Steel India Limited, Hazira, Gujarat, India</h2>
   <h3>Graduate Engineer Trainee (Jun 2022 - Mar 2023)</h3>
