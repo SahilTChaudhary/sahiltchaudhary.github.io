@@ -20,4 +20,4 @@ redirect_from:
 <h4></h4>
 
   *  GPA - 9.05/10 (90.5%)
-  *  Relevant Course Work -> Robotics, CAD/CAM, Product Development and Management
+  *  Relevant Course Work - Robotics, CAD/CAM, Product Development and Management
