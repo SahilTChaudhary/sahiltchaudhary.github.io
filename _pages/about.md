@@ -20,7 +20,7 @@ I have also participated in several projects during my Bachelor's. The most nota
 
 In terms of skills, I am proficient in programming languages such as Python, C++, MATLAB and R. I am also skilled in tools like SolidWorks, Ansys, Fusion 360, CopprliaSim (V-REP) and Git.
 
-Apart from academics, I was a part of the National Cadet Corps (NCC) in my college, by virtue of which I was a part the Republic Day and Independence Day parade contigents in my college. I also participated in a 10km Marathon, which was themed 'Run for Cancer'. Furthermore, I was a part of my high school basketball team. Such activities helped keep my mind and body fit and fine.
+Apart from academics, I was a part of the National Cadet Corps (NCC) in my college, by virtue of which I was a part the Republic Day and Independence Day parade contingents in my college. I also participated in a 10km Marathon, which was themed 'Run for Cancer'. Furthermore, I was a part of my high school basketball team. Such activities helped keep my mind and body fit and fine.
 
 My father is an Army Officer in the Indian Army, by virtue of which I have gained great exposure to the different cultures and landscapes of India. Such a lifestyle of constant change has also made me extremely flexible and adaptable. My mother is a homemaker.
 
