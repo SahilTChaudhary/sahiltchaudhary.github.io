@@ -6,13 +6,13 @@ collection: portfolio
 
 [[GitHub]](https://github.com/SahilTChaudhary/Prosthetic-Arm.git)
 
-* <b>Tech Stack:</b> SolidWorks, Additive Manufacturing, Raspberry Pi 4, Python
+* <b>Tech Stack:</b> SolidWorks, Additive Manufacturing, Arduino Uno, C++
 * <b> Summary </b>
-    -  <p style="text-align: justify;">Developed a CAD model and functional prototype of a cost-effective Prosthetic Arm using Additive Manufacturing.</p>
+    -  <p style="text-align: justify;">Developed a CAD model and functional prototype of a cost-effective Prosthetic Arm using Additive Manufacturing and Arduino Uno.</p>
     -  <p style="text-align: justify;">Performed Topology Optimization using SolidWorks to reduce the material cost.</p>
 
 * <b>In-Depth</b>
-    *  <p style="text-align: justify;"><b>Introduction</b><br>The idea behind the project was to design and develop a cost-effective Prosthetic Arm. The cost was reduced by using less material to make the structure of the arm. Topology Optimization was performed to determine the non-critical portions of the structure, and hence remove them. This reduced the material used and hence reduced the cost. The prototype was made using 3-D Printing and Raspberry Pi 4.</p>
+    *  <p style="text-align: justify;"><b>Introduction</b><br>The idea behind the project was to design and develop a cost-effective Prosthetic Arm. The cost was reduced by using less material to make the structure of the arm. Topology Optimization was performed to determine the non-critical portions of the structure, and hence remove them. This reduced the material used and hence reduced the cost. The prototype was made using 3-D Printing, Arduino Uno and an EMG kit.</p>
 
     <div style="text-align:center">
     <img src="/images/ProstheticArm.png" alt="Prosthetic_Arm" style="width:600px;height:400px;">
@@ -39,7 +39,7 @@ collection: portfolio
     </div>
     <figcaption style="text-align: center;"><u><em>Fig-4 Stress Analysis - Displacement</em></u></figcaption>
 
-    * <p style="text-align: justify;"><b>Topology Optimization</b><br>Topology Optimization was done to reduce the material used. The criteria used were to minimise mass by 30%, and ensure that the displacement does not increase by more than 1.2 times. The forearm and the hand were optimized, as they were the largest and most promiment components of the arm, and were also the main load bearing parts of the arm. The total mass reduction was 17.35%.</p>
+    * <p style="text-align: justify;"><b>Topology Optimization</b><br>Topology Optimization was done to reduce the material used. The criteria used were to minimise mass by 30%, and ensure that the displacement does not increase by more than 1.2 times. The forearm and the hand were optimized, as they were the largest and most prominent components of the arm, and were also the main load bearing parts of the arm. The total mass reduction was 17.35%.</p>
 
     <div style="text-align:center">
     <img src="/images/Forearm_Topo.png" controls="Topo" style="max-width: 750px;">
@@ -52,4 +52,4 @@ collection: portfolio
     <figcaption style="text-align: center;"><u><em>Fig-6 The Hand after Topology Optimization</em></u></figcaption>
 
 * <b>Results</b>
-    <p>Topology Optimization was successfully used to reduce the material cost of the arm. However, considering that the arm has been 3-D Printed using ABS, it is relatively weak, and can only be utilized for manipulating light objects like soda cans, stationery etc. Strength can be improved by either changing the material, or changing the manufacturing method, both of which will increase cost.</p>
+    <p>Topology Optimization was successfully used to reduce the material cost of the arm by 18%. However, considering that the arm has been 3-D Printed using ABS, it is relatively weak, and can only be utilized for manipulating light objects like soda cans, stationery etc. Strength can be improved by either changing the material, or changing the manufacturing method, both of which will increase cost.</p>
