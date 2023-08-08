@@ -18,7 +18,7 @@ My professional experiences include working at ArcelorMittal Nippon Steel (AM/NS
 
 I have also participated in several projects during my Bachelor's. The most notable of them is the Re-Sizeable Autonomous Cleaning Robot, in which I was the team lead. We designed a floor cleaning robot that can adjust its size depending on need, hence improving efficiency and reach. Having developed the CAD model, I was incharge of developing the Functional Prototype and programming the robot.
 
-In terms of skills, I am proficient in programming languages such as Python, C++, MATLAB and R. I am also skilled in tools like SolidWorks, Ansys, Fusion 360, CopprliaSim (V-REP) and Git.
+In terms of skills, I am proficient in programming languages such as Python, C++, MATLAB and R. I am also skilled in tools like SolidWorks, Ansys, Fusion 360, CoppeliaSim (V-REP) and Git.
 
 Apart from academics, I was a part of the National Cadet Corps (NCC) in my college, by virtue of which I was a part the Republic Day and Independence Day parade contingents in my college. I also participated in a 10km Marathon, which was themed 'Run for Cancer'. Furthermore, I was a part of my high school basketball team. Such activities helped keep my mind and body fit and fine.
 
