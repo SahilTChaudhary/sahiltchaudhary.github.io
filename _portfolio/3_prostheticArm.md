@@ -52,4 +52,4 @@ collection: portfolio
     <figcaption style="text-align: center;"><u><em>Fig-6 The Hand after Topology Optimization</em></u></figcaption>
 
 * <b>Results</b>
-    <p>Topology Optimization was successfully used to reduce the material cost of the arm by 18%. However, considering that the arm has been 3-D Printed using ABS, it is relatively weak, and can only be utilized for manipulating light objects like soda cans, stationery etc. Strength can be improved by either changing the material, or changing the manufacturing method, both of which will increase cost.</p>
+    <p>Topology Optimization was successfully used to reduce the material cost of the arm by 18%. However, considering that the arm has been 3-D Printed using PLA, it is relatively weak, and can only be utilized for manipulating light objects like soda cans, stationery etc. Strength can be improved by either changing the material, or changing the manufacturing method, both of which will increase cost.</p>
