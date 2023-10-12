@@ -21,15 +21,5 @@ redirect_from:
   * Worked as a Process Engineer to control the various parameters of the process, hence ensuring quality
   
 ---
-<figure>
-  <img src="/images/MS_Logo.png" alt="Maruti Suzuki Logo" style="width:350px;height:200px;">
-  </figure>
-* <h2>Maruti Suzuki India Limited, Gurgaon, Haryana, India</h2>
-  <h3>Intern (Jul 2021 - Sep 2021)</h3>
-  * Core Skills - Report Writing, Presentation Skills, Communication
-  * Trainee in Energy Auditing and Management
-  * Special focus on Boilers
-  * Learnt how to improve the efficiency and evaluate the performance of Boilers
-  * Documented my learnings as a Report, and presented the same
 
 
