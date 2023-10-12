@@ -22,4 +22,11 @@ redirect_from:
   
 ---
 
+<figure>
+  <img src="/images/robotics_institute.png" alt="RI Logo" style="width:350px;height:150px;">
+  </figure>
+* <h2>Biorobotics Lab, Pittsburgh, PA</h2>
+  <h3>Graduate Research Assistant (Aug 2023 - Present)</h3>
+  *	Working on designing the payload of RC Cars and a Quadruped Robot that are part of a convoy for mapping unseen environments.
+  * The aim is to make the payload lightweight, compact, and easily accessible to ensure serviceability.
 
