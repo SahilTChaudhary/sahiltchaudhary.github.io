@@ -23,7 +23,7 @@ redirect_from:
 ---
 
 <figure>
-  <img src="/images/robotics_institute.png" alt="RI Logo" style="width:350px;height:150px;">
+  <img src="/images/robotics_institute.png" alt="RI Logo" style="width:200px;height:150px;">
   </figure>
 * <h2>Biorobotics Lab, Pittsburgh, PA</h2>
   <h3>Graduate Research Assistant (Aug 2023 - Present)</h3>
