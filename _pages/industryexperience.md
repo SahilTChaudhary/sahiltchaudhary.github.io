@@ -14,8 +14,10 @@ redirect_from:
   </figure>
 * <h2>Biorobotics Lab, Pittsburgh, PA</h2>
   <h3>Graduate Research Assistant (Aug 2023 - Present)</h3>
-  *	Working on designing the payload of RC Cars and a Quadruped Robot that are part of a convoy for mapping unseen environments.
-  * The aim is to make the payload lightweight, compact, and easily accessible to ensure serviceability.
+  *	Working on designing the payload of RC Cars and a Quadruped Robot that are part of a convoy for mapping unseen environments
+  * Made the payload 20% lighter, more compact, and easily accessible to ensure serviceability
+  * Reduced Centre of Gravity by 10%, hence improving cornering performance of the RC cars
+  * Incorporated sensors, including LIDAR, IMU and two camera
   
 ---
 
