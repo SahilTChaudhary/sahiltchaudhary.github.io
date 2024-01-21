@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Industry Experience"
+title: "Work Experience"
 permalink: /industryexperience/
 author_profile: true
 redirect_from:
@@ -13,8 +13,8 @@ redirect_from:
   <img src="/images/robotics_institute.png" alt="RI Logo" style="width:200px;height:150px;">
   </figure>
 * <h2>Biorobotics Lab, Pittsburgh, PA</h2>
-  <h3>Graduate Research Assistant (Aug 2023 - Present)</h3>
-  *	Working on designing the payload of RC Cars and a Quadruped Robot that are part of a convoy for mapping unseen environments
+  <h3>Graduate Research Assistant (August 2023 - Present)</h3>
+  *	Working on designing the payload of RC Cars and a Quadruped Robot that are part of a heterogenous convoy
   * Made the payload 20% lighter, more compact, and easily accessible to ensure serviceability
   * Reduced Centre of Gravity by 10%, hence improving cornering performance of the RC cars
   * Incorporated sensors, including LIDAR, IMU and two camera
@@ -22,10 +22,20 @@ redirect_from:
 ---
 
 <figure>
+  <img src="/images/college_of_engineering.png" alt="COE Logo" style="width:500px;height:200px;">
+  </figure>
+* <h2>Carnegie Mellon University's College of Engineering, Pittsburgh, PA</h2>
+  <h3>Course Assistant (January 2024 - May 2024)</h3>
+  *	Worked as a Teaching Assistant for course 24787 - Machine Learning and Artificial Intelligence for Engineers (Spring 2024)
+  * Assisted Professor L. Burak Kara in teaching machine learning and artificial intelligence principles to graduate students
+
+---
+
+<figure>
   <img src="/images/AMNS_Logo.png" alt="AM/NS Logo" style="width:300px;height:100px;">
   </figure>
 * <h2>ArcelorMittal Nippon Steel India Limited, Hazira, Gujarat, India</h2>
-  <h3>Graduate Engineer Trainee (Jun 2022 - Mar 2023)</h3>
+  <h3>Graduate Engineer Trainee (June 2022 - March 2023)</h3>
   * Core Skills - Communication, Teamwork, Cross-Team Collaboration, Multitasking, Problem Identification and Solving
   * Control Room Operations
   * Ensured the smooth running of different processes such as conveyors, skip charging, material charging and discharging, coal blending, coal drying, slag granulation plant, and machinery involved in all the areas within Material Handling
