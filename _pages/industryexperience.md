@@ -10,19 +10,19 @@ redirect_from:
 {% include base_path %}
 
 <figure>
-  <img src="/images/robotics_institute.png" alt="RI Logo" style="width:200px;height:150px;">
+  <img src="/images/robotics_institute.png" alt="RI Logo" style="width:200px;height:200px;">
   </figure>
 * <h2>Biorobotics Lab, Pittsburgh, PA</h2>
   <h3>Graduate Research Assistant (August 2023 - Present)</h3>
   *	Working on designing the payload of RC Cars and a Quadruped Robot that are part of a heterogenous convoy
-  * Made the payload 20% lighter, more compact, and easily accessible to ensure serviceability
-  * Reduced Centre of Gravity by 10%, hence improving cornering performance of the RC cars
+  * Made the payload 20% lighter, more compact, and easily accessible to ensure serviceability by using Delrin and making the payload modular
+  * Reduced Centre of Gravity by 10% by decreasing the height of the payload, hence improving cornering performance of the RC cars
   * Incorporated sensors, including LIDAR, IMU and two camera
   
 ---
 
 <figure>
-  <img src="/images/college_of_engineering.png" alt="COE Logo" style="width:500px;height:200px;">
+  <img src="/images/college_of_engineering.png" alt="COE Logo" style="width:300px;height:150px;">
   </figure>
 * <h2>Carnegie Mellon University's College of Engineering, Pittsburgh, PA</h2>
   <h3>Course Assistant (January 2024 - May 2024)</h3>
@@ -32,7 +32,7 @@ redirect_from:
 ---
 
 <figure>
-  <img src="/images/AMNS_Logo.png" alt="AM/NS Logo" style="width:300px;height:100px;">
+  <img src="/images/AMNS_Logo.png" alt="AM/NS Logo" style="width:250px;height:100px;">
   </figure>
 * <h2>ArcelorMittal Nippon Steel India Limited, Hazira, Gujarat, India</h2>
   <h3>Graduate Engineer Trainee (June 2022 - March 2023)</h3>
