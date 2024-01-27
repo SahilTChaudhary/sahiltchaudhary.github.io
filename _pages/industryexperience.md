@@ -22,7 +22,7 @@ redirect_from:
 ---
 
 <figure>
-  <img src="/images/college_of_engineering.png" alt="COE Logo" style="width:300px;height:150px;">
+  <img src="/images/college_of_engineering.png" alt="COE Logo" style="width:300px;height:100px;">
   </figure>
 * <h2>Carnegie Mellon University's College of Engineering, Pittsburgh, PA</h2>
   <h3>Course Assistant (January 2024 - May 2024)</h3>
