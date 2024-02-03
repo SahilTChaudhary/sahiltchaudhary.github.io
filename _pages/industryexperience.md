@@ -14,10 +14,10 @@ redirect_from:
   </figure>
 * <h2>Biorobotics Lab, Pittsburgh, PA</h2>
   <h3>Graduate Research Assistant (August 2023 - Present)</h3>
-  *	Working on designing the payload of RC Cars and a Quadruped Robot that are part of a heterogenous convoy
+  *	Redesigned the payload of RC Cars and a Quadruped Robot that are part of a heterogenous convoy to improve performance and serviceability
   * Made the payload 20% lighter, more compact, and easily accessible to ensure serviceability by using Delrin and making the payload modular
   * Reduced Centre of Gravity by 10% by decreasing the height of the payload, hence improving cornering performance of the RC cars
-  * Incorporated sensors, including LIDAR, IMU and two camera
+  * Incorporated sensors, including LIDAR, IMU, and two cameras, along with the on-board computer, motor controller, and circuit boards while ensuring optimal field of view of the sensors
   
 ---
 
