@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-<p><h3><span style="text-align:left; display:inline-block; width:50%;">Carnegie Mellon University, Pittsburgh</span><span style="text-align:right; display:inline-block; width:50%;">Aug 2023 - Dec 2024</span></h3></p>
+<p><h3><span style="text-align:left; display:inline-block; width:50%;">Carnegie Mellon University, Pittsburgh</span><span style="text-align:right; display:inline-block; width:50%;">August 2023 - May 2025</span></h3></p>
 Master of Science in Mechanical Engineering - Research
 
   *  GPA - 4.0/4.0
@@ -17,7 +17,7 @@ Master of Science in Mechanical Engineering - Research
 
 
 
-<p><h3><span style="text-align:left; display:inline-block; width:50%;">Vellore Institute of Technology, Vellore</span><span style="text-align:right; display:inline-block; width:50%;">Jul 2018 - Aug 2022</span></h3></p>
+<p><h3><span style="text-align:left; display:inline-block; width:50%;">Vellore Institute of Technology, Vellore</span><span style="text-align:right; display:inline-block; width:50%;">July 2018 - August 2022</span></h3></p>
 <h4></h4>
 Bachelor of Technology in Mechanical Engineering
 
