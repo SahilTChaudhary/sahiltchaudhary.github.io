@@ -29,7 +29,7 @@ collection: portfolio
     <p>Another significant issue that arises is that IMUs can become saturated in aggressive and fast motions, as the robot's angular velocity and linear acceleration might exceed the IMU's measuring range. This can yield the IMU to be useless during those time-steps. In order to overcome this, we use a stochastic process-augmented kinematic model, in which the IMU measurements, which are angular velocity and linear acceleration, are modeled as outputs of the system. This means that they are part of the state vector and are used in the update stage. Doing this enables us to estimate the angular velocity and linear acceleration as part of the state, and then correct the estimate using a filtering approach such as the Extended Kalman Filter (EKF) or the Unscented Kalman Filter (UKF). If during a certain maneuver or time-step the actual IMU reading becomes saturated, we just skip the measurements from those saturated channels, and use the current estimate of the angular velocity and linear acceleration from the propagate model during that time. This ensures that the system is more robust during aggressive and fast motion, as the system can continue to operate effectively and maintain functionality even when the IMU measurements are saturated. Thus, overall reliability and performance is enhanced.</p>
 
     <div style="text-align:center">
-    <img src="/images/point_lio_algo.png" alt="pointLIO_algorithm" style="width:600px;height:300px;">
+    <img src="/images/point_lio_algo.png" alt="pointLIO_algorithm" style="width:500;height:600px;">
     </div>
     <figcaption style="text-align: center;"><u><em>Fig-2 Point-LIO algorithm (taken from the Point-LIO paper)</em></u></figcaption>
 

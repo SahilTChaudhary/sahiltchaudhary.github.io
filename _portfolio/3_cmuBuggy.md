@@ -23,7 +23,7 @@ collection: portfolio
     <p>With PID, the time taken to complete the track was 243.776 s.</p>
 
     <div style="text-align:center">
-    <img src="/images/buggy_pid_plots.png" alt="buggy_pid_plots" style="width:600px;height:300px;">
+    <img src="/images/buggy_pid_plots.png" alt="buggy_pid_plots" style="width:500px;height:400px;">
     </div>
     <figcaption style="text-align: center;"><u><em>Fig-1 Performance plots of the PID Controller</em></u></figcaption>
 
@@ -31,13 +31,13 @@ collection: portfolio
     <p>With LQR, the time taken to complete the track was 152.96 s. Hence, it was significantly faster than the PID.</p>
 
     <div style="text-align:center">
-    <img src="/images/buggy_lqr_plots.png" alt="buggy_lqr_plots" style="width:600px;height:300px;">
+    <img src="/images/buggy_lqr_plots.png" alt="buggy_lqr_plots" style="width:500px;height:400px;">
     </div>
     <figcaption style="text-align: center;"><u><em>Fig-2 Performance plots of the LQR Controller</em></u></figcaption>
 
     <p>EKF-SLAM was integrated with the LQR controller implemented previously, to get a track completion time of 158.368 s.</p>
 
     <div style="text-align:center">
-    <img src="/images/buggy_ekf_plots.png" alt="buggy_ekf_plots" style="width:600px;height:300px;">
+    <img src="/images/buggy_ekf_plots.png" alt="buggy_ekf_plots" style="width:500px;height:400px;">
     </div>
     <figcaption style="text-align: center;"><u><em>Fig-3 Performance plots with EKF-SLAM</em></u></figcaption>
