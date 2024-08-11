@@ -1,6 +1,6 @@
 ---
 title: "Point-LiDAR Inertial Odometry"
-excerpt: "Implemented Point-LIO from scratch to overcome the drawbacks of frame-based LiDAR processing. <br/><img src='/images/point_lio_cover.png'>"
+excerpt: "Implemented Point-LIO from scratch to overcome the drawbacks of frame-based LiDAR processing. <br/><img src='/images/point_lio_cover.png' style='width:300;height:150;'>"
 collection: portfolio
 ---
 

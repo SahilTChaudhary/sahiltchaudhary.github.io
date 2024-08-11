@@ -1,6 +1,6 @@
 ---
 title: "Re-Sizeable Autonomous Cleaning Robot"
-excerpt: "Designed and developed a Floor Cleaning Robot that can adjust its size depending on need. <br/><img src='/images/resizeableRobotRender.png'>"
+excerpt: "Designed and developed a Floor Cleaning Robot that can adjust its size depending on need. <br/><img src='/images/resizeableRobotRender.png' style='width:300;height:150;'>"
 collection: portfolio
 ---
 
