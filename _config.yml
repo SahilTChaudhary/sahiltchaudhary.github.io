@@ -6,7 +6,7 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-remote_theme             : pages-themes/cayman@v0.2.0
+remote_theme             : pages-themes/slate@v0.2.0
 locale                   : "en-US"
 title                    : "Sahil T Chaudhary / My Portfolio"
 title_separator          : "-"
@@ -279,6 +279,7 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jemoji
+  - jekyll-remote-theme
 
 
 # Archives
