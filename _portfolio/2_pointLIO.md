@@ -11,6 +11,7 @@ collection: portfolio
     -  <p style="text-align: justify;">Implemented Point-LIO using C++ and GTSAM to overcome the drawbacks of frame-based LiDAR processing.</p>
     -  <p style="text-align: justify;">Overcame IMU saturation in aggressive motion by modeling it as part of the state vector.</p>
     -  <p style="text-align: justify;">Used an Extended Kalman Filter (EKF) framework to achieve successful state estimation.</p>
+    -  <p style="text-align: justify;">My role: Implemented the EKF.</p>
 
 * <b>In-Depth</b>
     *  <p style="text-align: justify;"><b>Introduction</b><br>This project was completed as part of the Robot Localization and Mapping (16-833) course at CMU. This project presents Point-LIO, a novel filtering based approach to LIDAR-Inertial Odometry. The algorithm treats inputs from Inertial Measurement Units (IMUs) and LIDAR sensors as proper measurement updates within an Extended Kalman Filter (EKF) framework. Our objective was to evaluate the performance of the Point-LIO system on data collected on ground vehicles navigating through long, narrow corridors. Given the necessity for real-time processing, we implemented the algorithm in C++. Furthermore, we enhanced the algorithm's accuracy further by incorporating an extension based on the Unscented Kalman Filter (UKF) - demonstrating the capability to estimate robot state during aggresive motion. </p>

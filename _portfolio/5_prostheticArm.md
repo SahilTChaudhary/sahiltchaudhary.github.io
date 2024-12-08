@@ -10,6 +10,7 @@ collection: portfolio
 * <b> Summary </b>
     -  <p style="text-align: justify;">Developed a CAD model and functional prototype of a cost-effective Prosthetic Arm using Additive Manufacturing and Arduino Uno.</p>
     -  <p style="text-align: justify;">Performed Topology Optimization using SolidWorks to reduce the material cost.</p>
+    -  <p style="text-align: justify;">My role: CAD, helped with Arduino programming</p>
 
 * <b>In-Depth</b>
     *  <p style="text-align: justify;"><b>Introduction</b><br>The idea behind the project was to design and develop a cost-effective Prosthetic Arm. The cost was reduced by using less material to make the structure of the arm. Topology Optimization was performed to determine the non-critical portions of the structure, and hence remove them. This reduced the material used and hence reduced the cost. The prototype was made using 3-D Printing, Arduino Uno and an EMG kit.</p>

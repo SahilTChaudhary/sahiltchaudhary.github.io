@@ -11,6 +11,7 @@ collection: portfolio
     -  <p style="text-align: justify;">Implemented and tuned a PID controller for a Tesla Model 3, using Webots simulator.</p>
     -  <p style="text-align: justify;">Used Pole Placement to generate an optimal Gain matrix, and analyzed the controllability and stability of the system.</p>
     -  <p style="text-align: justify;">Developed an LQR controller for the same system, as a comparison to the PID controller, and performed EKF-SLAM.</p>
+    -  <p style="text-align: justify;">My role: Implemented everything, as it was a solo project.</p>
 
 * <b>In-Depth</b>
     *  <p style="text-align: justify;"><b>Introduction</b><br>This project was completed as part of the Modern Control Theory (24-677) course at CMU. Various control techniques and algorithms were implemented by applying them in a simulation of the CMU tradition of Buggy race. Various algorithms like PID with Pole Placement, LQR and EKF SLAM were applied by ensuring the desired performance criteria.</p>
