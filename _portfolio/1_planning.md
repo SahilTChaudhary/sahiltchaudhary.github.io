@@ -1,6 +1,6 @@
 ---
 title: "Quadruped Path Planner for Dynamic Environments"
-excerpt: "Implemented a global path planner for a quadruped robot moving in dynamic environments. <br/><img src='/images/planning_path.png' style='width:250;height:150;'>"
+excerpt: "Implemented a global path planner for a quadruped robot moving in dynamic environments. <br/><img src='/images/planning_path.png' style='width:150;height:100;'>"
 collection: portfolio
 ---
 
@@ -49,7 +49,7 @@ collection: portfolio
     <p>We compared the results of planning time and other metrics between the existing RRT-Connect and our PRM-A* and its variants.</p>
 
     <div style="text-align:center">
-    <img src="/images/planning_times.png" alt="planning_times" style="width:600px;height:300px;">
+    <img src="/images/planning_times.png" alt="planning_times" style="width:600px;height:150px;">
     </div>
     <figcaption style="text-align: center;"><u><em>Table-1 Comparison of the different approaches</em></u></figcaption>
 
