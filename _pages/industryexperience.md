@@ -14,14 +14,19 @@ redirect_from:
   </figure>
 * <h2>Biorobotics Lab, Pittsburgh, PA</h2>
   <h3>Graduate Research Assistant (August 2023 - Present)</h3>
-* <h4>Convoy</h4>
-  *	Developed a Heterogenous Convoy framework comprising RC Cars and Quadruped Robots
-  *	Developed a framework wherein the robots Rendezvous at the nearest intersection and then Go Home as a convoy
-* <h4>Payload Redesign</h4>
-  *	Redesigned the payload of RC Cars and a Quadruped Robot that are part of a heterogenous convoy to improve performance and serviceability
-  * Made the payload 20% lighter, more compact, and easily accessible to ensure serviceability by using Delrin and making the payload modular
-  * Reduced Centre of Gravity by 10% by decreasing the height of the payload, hence improving cornering performance of the RC cars
-  * Incorporated sensors, including LIDAR, IMU, and two cameras, along with the on-board computer, motor controller, and circuit boards while ensuring optimal field of view of the sensors
+  * Core Skills - C++, Python, ROS, Git, Linux, Gazebo, SolidWorks
+  * <h3>Comms-Aware Planning</h3>
+    *	Developed a novel algorithm to maintain communication fidelity among robots in a convoy
+    *	Formulated a modified Max-Min Spanning Tree to optimize the distance the robots travel before peeling off
+    * Validated the algorithm through successful deployment on robots using proprietary radios
+  * <h3>Convoy</h3>
+    *	Developed a Heterogenous Convoy framework comprising RC Cars and Quadruped Robots
+    *	Designed an algorithm enabling rendezvous at intersections and coordinated return as a convoy
+  * <h3>Payload Redesign</h3>
+    *	Redesigned the payload of RC Cars and a Quadruped Robot that are part of a heterogenous convoy to improve performance and serviceability
+    * Made the payload 20% lighter, more compact, and easily accessible to ensure serviceability by using Delrin and making the payload modular
+    * Reduced Centre of Gravity by 10% by decreasing the height of the payload, hence improving cornering performance of the RC cars
+    * Incorporated sensors, including LiDAR, IMU, and two cameras, along with the on-board computer, motor controller, and circuit boards while ensuring optimal field of view of the sensors
 
 ---
 

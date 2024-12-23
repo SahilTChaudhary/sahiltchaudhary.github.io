@@ -9,7 +9,7 @@
 remote_theme             : pages-themes/cayman@v0.2.0
 # theme                    : jekyll-theme-minimal
 locale                   : "en-US"
-title                    : "Sahil T Chaudhary / My Portfolio"
+title                    : "Sahil T Chaudhary"
 title_separator          : "-"
 name                     : &name "Sahil T Chaudhary"
 description              : &description "personal description"
