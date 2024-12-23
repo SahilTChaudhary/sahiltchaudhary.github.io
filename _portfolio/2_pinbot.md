@@ -32,7 +32,7 @@ collection: portfolio
     <p style="text-align: justify;">The reward function is calculated by factoring in the score, play time, ball position, and ball loss. The score is the raw game score tracked by the machine, and it is the direct metric we seek to increase. A large penalty when a ball is lost to encourage the agent from prematurely ending a game. Furthermore, to encourage activity in the typically sparse environment, a small reward is added whenever the ball is on the field above the flippers, and detracted when at or below. This position-based reward is necessary, as a simple time-based award would reach a local minima where the agent simply traps the ball on the flipper. We sum these three components to get the reward function as shown in Fig-2.</p>
 
     <div style="text-align:center">
-    <img src="/images/reward_formulation.png" alt="reward" style="width:250;height:150px;">
+    <img src="/images/reward_formulation.png" alt="reward" style="width:300;height:200px;">
     </div>
     <figcaption style="text-align: center;"><u><em>Fig-1 Reward formulation</em></u></figcaption>
 
@@ -57,7 +57,7 @@ collection: portfolio
     <figcaption style="text-align: center;"><u><em>Fig-4 Cumulative Reward and Episode Length</em></u></figcaption>
 
     <div style="text-align:center">
-    <img src="/images/rl_losses.png" alt="losses" style="width:1000px;height:300px;">
+    <img src="/images/rl_losses.png" alt="losses" style="width:1000px;height:200px;">
     </div>
     <figcaption style="text-align: center;"><u><em>Fig-5 Losses</em></u></figcaption>
 
