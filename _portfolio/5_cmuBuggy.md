@@ -2,7 +2,7 @@
 title: "CMU Buggy Sim"
 excerpt: |
     Implemented various control techniques on a racecar simulation.  
-    ![Control](/images/buggy_plots.png){:width='600px' height='350px'} 
+    ![Control](/images/buggy_plots.png){:width='500px' height='300px'} 
 collection: portfolio
 ---
 
