@@ -2,7 +2,7 @@
 title: "Quadruped Path Planner for Dynamic Environments"
 excerpt: |
     Implemented a global path planner for a quadruped robot moving in dynamic environments.  
-    ![Lazy-PRM-D*](/images/planning_path.png){:width='400px' height='800px'} 
+    ![Lazy-PRM-D*](/images/planning_path.png){:width='450px' height='850px'} 
 collection: portfolio
 ---
 
