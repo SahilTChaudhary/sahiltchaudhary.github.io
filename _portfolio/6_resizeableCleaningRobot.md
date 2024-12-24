@@ -2,7 +2,7 @@
 title: "Re-Sizeable Autonomous Cleaning Robot"
 excerpt: |
     Designed and developed a Floor Cleaning Robot that can adjust its size depending on need.  
-    ![Re-Sizeable Robot](/images/resizeableRobotRender.png){:width='600px' height='300px'}
+    ![Re-Sizeable Robot](/images/resizeableRobotRender.png){:width='500px' height='250px'}
 collection: portfolio
 ---
 
