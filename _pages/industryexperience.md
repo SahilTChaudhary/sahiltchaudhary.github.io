@@ -20,7 +20,7 @@ redirect_from:
     *	Formulated a modified Max-Min Spanning Tree to optimize the distance the robots travel before peeling off
     * Validated the algorithm through successful deployment on robots using proprietary radios
   * <h3>Convoy</h3>
-    *	Developed a Heterogenous Convoy framework comprising RC Cars and Quadruped Robots
+    *	Developed a Decentralized Heterogenous Convoy framework comprising RC Cars and Quadruped Robots
     *	Designed an algorithm enabling rendezvous at intersections and coordinated return as a convoy
   * <h3>Payload Redesign</h3>
     *	Redesigned the payload of RC Cars and Quadruped Robots that are part of a heterogenous convoy to improve performance and serviceability
