@@ -1,6 +1,7 @@
 ---
 title: "Point-LiDAR Inertial Odometry"
-excerpt: "Implemented Point-LIO from scratch to overcome the drawbacks of frame-based LiDAR processing. <br/><img src='/images/point_lio_cover.png' style='width:300;height:150;'>"
+excerpt: "Implemented Point-LIO from scratch to overcome the drawbacks of frame-based LiDAR processing. 
+![Point-LIO](/images/point_lio_cover.png){:width='300px' height='150px'}" 
 collection: portfolio
 ---
 
@@ -19,7 +20,7 @@ collection: portfolio
     <div style="text-align:center">
     <img src="/images/point_lio_cover.png" alt="point_lio_cover" style="width:600px;height:300px;">
     </div>
-    <figcaption style="text-align: center;"><u><em>Fig-1 Taken from Point LIO</em></u></figcaption>
+    <figcaption style="text-align: center;"><u><em>Fig-1 Taken from the Point LIO paper</em></u></figcaption>
   
     * <p style="text-align: justify;"><b>Motivation</b><br>LiDAR is a sensor that samples at discrete points in time and returns the range and azimuth associated with the points in question. However, a common practice is to accumulate these points into a scan. Even though this aggregation aids in data processing, it introduces motion distortion, specifically when the LiDAR is in motion at high speeds. This distortion can compromise the accuracy of spatial measurements and pose challenges for navigation and mapping tasks. In addition to increasing lag, the low frame rate restricts the available bandwidth.</p>
 

@@ -1,6 +1,7 @@
 ---
 title: "CMU Buggy Sim"
-excerpt: "Implemented various control techniques on a racecar simulation. <br/><img src='/images/buggy_plots.png' style='width:150;height:100;'>"
+excerpt: "Implemented various control techniques on a racecar simulation. 
+![Control](/images/buggy_plots.png){:width='150px' height='100px'}" 
 collection: portfolio
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Prosthetic Arm"
-excerpt: "Performed Topology Optimization to reduce the material cost of a Prosthetic Arm. <br/><img src='/images/ProstheticArm.png' style='width:150;height:100;'>"
+excerpt: "Performed Topology Optimization to reduce the material cost of a Prosthetic Arm.
+![Prosthetic Arm](/images/ProstheticArm.png){:width='150px' height='100px'}"
 collection: portfolio
 ---
 
@@ -31,24 +32,24 @@ collection: portfolio
     * <p style="text-align: justify;"><b>Mechanical Design</b><br>The components of the Prosthetic Arm were made using 3-D Printing. It has 6 Degrees of Freedom. Each finger is attached to a servo motor via a tendon. Once a motor actuates, it pulls on the tendon, creating tension, which causes the corresponding finger to move. The individual digits of each finger cannot be actuated separately, and the entire finger moves as whole. The wrist joint is controlled via a sixth servo motor, and is connected via a 1:1 gear. The motors receive signals from the user's arm, via an Electromyography (EMG) sensor, which senses electrical impulses sent from our brain to muscles in the body.</p>
 
     <div style="text-align:center">
-    <img src="/images/ArmStressAnalysis_vonMises.png" controls="StressAnalysis" style="max-width: 750px;">
+    <img src="/images/ArmStressAnalysis_vonMises.png" controls="StressAnalysis" style="max-width: 600px;">
     </div>
     <figcaption style="text-align: center;"><u><em>Fig-3 Stress Analysis - Von Mises</em></u></figcaption>
 
     <div style="text-align:center">
-    <img src="/images/ArmStressAnalysis_Displacement.png" controls="StressAnalysis" style="max-width: 750px;">
+    <img src="/images/ArmStressAnalysis_Displacement.png" controls="StressAnalysis" style="max-width: 600px;">
     </div>
     <figcaption style="text-align: center;"><u><em>Fig-4 Stress Analysis - Displacement</em></u></figcaption>
 
     * <p style="text-align: justify;"><b>Topology Optimization</b><br>Topology Optimization was done to reduce the material used. The criteria used were to minimise mass by 30%, and ensure that the displacement does not increase by more than 1.2 times. The forearm and the hand were optimized, as they were the largest and most prominent components of the arm, and were also the main load bearing parts of the arm. The total mass reduction was 17.35%.</p>
 
     <div style="text-align:center">
-    <img src="/images/Forearm_Topo.png" controls="Topo" style="max-width: 750px;">
+    <img src="/images/Forearm_Topo.png" controls="Topo" style="max-width: 600px;">
     </div>
     <figcaption style="text-align: center;"><u><em>Fig-5 The Forearm after Topology Optimization</em></u></figcaption>
 
     <div style="text-align:center">
-    <img src="/images/Hand_Topo.png" controls="Topo" style="max-width: 750px;">
+    <img src="/images/Hand_Topo.png" controls="Topo" style="max-width: 600px;">
     </div>
     <figcaption style="text-align: center;"><u><em>Fig-6 The Hand after Topology Optimization</em></u></figcaption>
 

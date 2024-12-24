@@ -12,9 +12,9 @@ Welcome to my website!
 
 Here is my [Resume](http://sahiltchaudhary.github.io/files/Resume.pdf)!
 
-I am Sahil Chaudhary, a Master of Science in Mechanical Engineering graduate from Carnegie Mellon University, Pittsburgh, Pennsylvania, USA. My specialization lies in the vast and exciting field of Robotics. In particular, I am interested in all things at the intersection of Controls amd Planning, particularly for autonomous systems and field robotics. I invite you to explore my work and experiences that have shaped and defined my passion for the field.
+I am Sahil Chaudhary, a **Master of Science in Mechanical Engineering graduate from Carnegie Mellon University, Pittsburgh, Pennsylvania, USA**. My specialization lies in the vast and exciting field of **Robotics**. In particular, I am interested in all things at the intersection of **Controls amd Planning**, particularly for autonomous systems and field robotics. I invite you to explore my work and experiences that have shaped and defined my passion for the field.
 
-I wish to make a difference and contribute positively to society, and hence aid in the progress of mankind. I am seeking full-time roles in Robotics Software, Controls and Planning.
+I wish to make a difference and contribute positively to society, and hence aid in the progress of mankind. **I am seeking full-time roles in Robotics Software, Controls and Planning**.
 
 <h2>My Skillset</h2>
   * <b>Programming Languages:</b> C++, Python, MATLAB, Julia
@@ -31,16 +31,17 @@ I wish to make a difference and contribute positively to society, and hence aid 
 
 * My prior work and professional experiences include:
 
-  * Working as a Course Assistant for the Machine Learning and Artificial Intelligence for Engineers (24787) course in Carnegie Mellon University's College of Engineering, in which I assisted Professor L. Burak Kara in teaching machine learning and artificial intelligence principles to graduate students.
-  * Working at ArcelorMittal Nippon Steel (AM/NS) India Limited, as a Graduate Engineer Trainee.
+  * Working as a **Course Assistant for the Machine Learning and Artificial Intelligence for Engineers (24787) course in Carnegie Mellon University's College of Engineering**, in which I assisted Professor L. Burak Kara in teaching machine learning and artificial intelligence principles to graduate students.
+  * Working at **ArcelorMittal Nippon Steel (AM/NS) India Limited, as a Graduate Engineer Trainee**.
 
 * My coursework and projects cover a wide variety of domains, contributing to my development as a holistic Robotics Engineer. Here are some of the domains in which my knowledge and expertise lies:
 
-  * Controls: PID, LQR, MPC, and MPPI controllers, and have also worked on non-linear traj-opt methods like iLQR.
-  * Planning: A* and its variants, D*, PRM, RRT and its variants, and have hence developed a keen understanding of these algorithms.
-  * SLAM: State estimation methods like EKF, and LiDAR-IMU time syncing.
-  * Machine Learning: Traditional supervised and unsupervised learning techniques, and implementation using PyTorch and SKLearn libraries.
-  * Reinforcement Learning: Value-Based and Policy-Based RL algorithms, and deployment of a PPO-agent to play a game of Pinball!
-  * Hardware: Worked on several hardware projects over the ears, including designing payloads for robots. I am a MechE afterall!
+  * <b>Controls:</b> PID, LQR, MPC, and MPPI controllers, and have also worked on non-linear traj-opt methods like iLQR.
+  * <b>Planning:</b> A* and its variants, D*, PRM, RRT and its variants, and have hence developed a keen understanding of these algorithms.
+Other domains include:
+  * <b>SLAM:</b> State estimation methods like EKF, and LiDAR-IMU time syncing.
+  * <b>Machine Learning:</b> Traditional supervised and unsupervised learning techniques, and implementation using PyTorch and SKLearn libraries.
+  * <b>Reinforcement Learning:</b> Value-Based and Policy-Based RL algorithms, and deployment of a PPO-agent to play a game of Pinball!
+  * <b>Hardware:</b> Worked on several hardware projects over the ears, including designing payloads for robots. I am a MechE afterall!
 
 Thank you for taking the time to go through my portfolio. I look forward to any opportunities that come my way!

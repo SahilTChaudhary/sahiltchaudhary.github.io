@@ -1,6 +1,7 @@
 ---
 title: "Quadruped Path Planner for Dynamic Environments"
-excerpt: "Implemented a global path planner for a quadruped robot moving in dynamic environments. <br/><img src='/images/planning_path.png' style='width:150;height:100;'>"
+excerpt: "Implemented a global path planner for a quadruped robot moving in dynamic environments.
+![Lazy-PRM-D*](/images/planning_path.png){:width='150px' height='100px'}" 
 collection: portfolio
 ---
 
