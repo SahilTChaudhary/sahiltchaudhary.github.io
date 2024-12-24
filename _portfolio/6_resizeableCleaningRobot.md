@@ -30,12 +30,12 @@ collection: portfolio
        
     * <p style="text-align: justify;"><b>Mechanical Design</b><br>The robot comprises three hollow cuboid compartments that overlap and can linearly actuate with the help of the ball screw mechanism. The vacuum system comprises a set of rigid concentric pipes, and there will be a slit along the length of the pipe which will make the vacuum opening. The ends of these pipes will be attached to the walls of the robot on both sides. Hence, whenever the pipes will move further away from each other the slit opening will also increase making it more efficient to collect dust. These pipes will be connected to a storage compartment via a connecting pipe.</p>
 
-    <p style="text-align: justify;">Increasing the area of the vacuum opening will reduce the suction power so to overcome this problem a motor will be inserted which will adjust the suction power based on the largest opening. For example, when the robot is fully extended it will be powerful enough to absorb dust at the largest opening and when the opening size reduces i.e., when the robot contracts, the vacuum motor voltage will automatically be reduced using a buck converter in order to maintain a constant suction pressure.</p>
+        * <p style="text-align: justify;">Increasing the area of the vacuum opening will reduce the suction power so to overcome this problem a motor will be inserted which will adjust the suction power based on the largest opening. For example, when the robot is fully extended it will be powerful enough to absorb dust at the largest opening and when the opening size reduces i.e., when the robot contracts, the vacuum motor voltage will automatically be reduced using a buck converter in order to maintain a constant suction pressure.</p>
 
-    <div style="text-align:center">
-    <img src="/images/resizeableRobot_Mechanism.gif" alt="Actuation_Mechanism" style="width:550px;height:300px;">
-    </div>
-    <figcaption style="text-align: center;"><u><em>Fig-3 Actuation Mechanism</em></u></figcaption>
+        <div style="text-align:center">
+        <img src="/images/resizeableRobot_Mechanism.gif" alt="Actuation_Mechanism" style="width:550px;height:300px;">
+        </div>
+        <figcaption style="text-align: center;"><u><em>Fig-3 Actuation Mechanism</em></u></figcaption>
 
 
     * <p style="text-align: justify;"><b>Circuit Design</b><br>The components used are Ultrasonic sensors, camera, four wheel motors, a Ball Screw Actuator, and the Raspberry Pi 4. Representative circuit diagrams are given below.</p>

@@ -14,7 +14,7 @@ collection: portfolio
     -  <p style="text-align: justify;">My role: Implemented the z-height controller, and helped implement PRM-D*.</p>
 
 * <b>In-Depth</b>
-    *  <p style="text-align: justify;"><b>Introduction</b><br>This project was completed as part of the Planning and Decision Making (16-782) course at CMU. The aim of this project was to implement a Lazy PRM-D* global path planner, and compare its performance with an existing KD-RRT-Connect planner. The existing planner struggled with dynamic environments and complex terrrains. To overcome these drawbacks, we implemented Lazy PRM-D* and compared it with the same. Experimental validation showed that our planner generated lower cost paths while maintaining comparable planning times with the existing RRT-Connect approach.</p>
+    *  <p style="text-align: justify;"><b>Introduction</b><br>This project was completed as part of the Planning and Decision-making in Robotics (16-782) course at CMU. The aim of this project was to implement a Lazy PRM-D* global path planner, and compare its performance with an existing KD-RRT-Connect planner. The existing planner struggled with dynamic environments and complex terrrains. To overcome these drawbacks, we implemented Lazy PRM-D* and compared it with the same. Experimental validation showed that our planner generated lower cost paths while maintaining comparable planning times with the existing RRT-Connect approach.</p>
 
     <div style="text-align:center">
     <img src="/images/spirit.png" alt="spirit" style="width:500;height:300px;">
@@ -49,7 +49,7 @@ collection: portfolio
     <p>We compared the results of planning time and other metrics between the existing RRT-Connect and our PRM-A* and its variants.</p>
 
     <div style="text-align:center">
-    <img src="/images/planning_times.png" alt="planning_times" style="width:400px;height:100px;">
+    <img src="/images/planning_times.png" alt="planning_times" style="width:500px;height:100px;">
     </div>
     <figcaption style="text-align: center;"><u><em>Table-1 Comparison of the different approaches</em></u></figcaption>
 
