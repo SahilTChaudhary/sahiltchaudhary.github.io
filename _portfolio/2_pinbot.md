@@ -1,8 +1,8 @@
 ---
 title: "PinBot – Reinforcement Learning on a Pinball Machine"
 excerpt: |
-    "Developed a reinforcement learning agent using Proximal Policy Optimization (PPO) to play the pinball game Total Nuclear Annihilation.  
-    ![Total Nuclear Annihilation](/images/tna.png){:width='500px' height='300px'}"
+    Developed a reinforcement learning agent using Proximal Policy Optimization (PPO) to play the pinball game Total Nuclear Annihilation.  
+    ![Total Nuclear Annihilation](/images/tna.png){:width='300px' height='150px'}
 collection: portfolio
 ---
 
