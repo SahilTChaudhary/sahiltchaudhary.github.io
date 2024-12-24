@@ -1,7 +1,8 @@
 ---
 title: "Model Predictive Path Integral Control"
-excerpt: "Implemented MPPI on an RC car platform using C++ and ROS to enable aggressive driving. 
-![MPPI](/images/mppi_paths.png){:width='250px' height='150px'}" 
+excerpt: |
+    "Implemented MPPI on an RC car platform using C++ and ROS to enable aggressive driving.  
+    ![MPPI](/images/mppi_paths.png){:width='150px' height='300px'}" 
 collection: portfolio
 ---
 

@@ -1,7 +1,8 @@
 ---
 title: "Prosthetic Arm"
-excerpt: "Performed Topology Optimization to reduce the material cost of a Prosthetic Arm.
-![Prosthetic Arm](/images/ProstheticArm.png){:width='150px' height='100px'}"
+excerpt: |
+    "Performed Topology Optimization to reduce the material cost of a Prosthetic Arm.  
+    ![Prosthetic Arm](/images/ProstheticArm.png){:width='500px' height='300px'}"
 collection: portfolio
 ---
 

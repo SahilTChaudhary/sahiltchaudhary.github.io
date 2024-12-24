@@ -14,7 +14,7 @@ redirect_from:
   </figure>
 * <h2>Biorobotics Lab, Pittsburgh, PA</h2>
   <h3>Graduate Research Assistant (August 2023 - Present)</h3>
-  * Core Skills - C++, Python, ROS, Git, Linux, Gazebo, SolidWorks
+  * <b>Core Skills:</b> C++, Python, ROS, Git, Linux, Gazebo, SolidWorks
   * <h3>Comms-Aware Planning</h3>
     *	Developed a novel algorithm to maintain communication fidelity among robots in a convoy
     *	Formulated a modified Max-Min Spanning Tree to optimize the distance the robots travel before peeling off
@@ -45,7 +45,7 @@ redirect_from:
   </figure>
 * <h2>ArcelorMittal Nippon Steel India Limited, Hazira, Gujarat, India</h2>
   <h3>Graduate Engineer Trainee (June 2022 - March 2023)</h3>
-  * Core Skills - Communication, Teamwork, Cross-Team Collaboration, Multitasking, Problem Identification and Solving
+  * <b>Core Skills:</b> Communication, Teamwork, Cross-Team Collaboration, Multitasking, Problem Identification and Solving
   * Control Room Operations
   * Ensured the smooth running of different processes such as conveyors, skip charging, material charging and discharging, coal blending, coal drying, slag granulation plant, and machinery involved in all the areas within Material Handling
   * Assisted and collaborated with Field Engineers to resolve problems such as malfunctioning, errors or issues with  the equipment and machinery, ensuring safety, and productivity of the Plant
