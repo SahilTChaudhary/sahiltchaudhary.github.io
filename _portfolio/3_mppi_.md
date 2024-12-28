@@ -8,6 +8,8 @@ collection: portfolio
 
 [[GitHub]](https://github.com/dpmick/ocrl_mppi)[[Report]](http://sahiltchaudhary.github.io/files/OCRL_Final_Project.pdf)
 
+<i>February 2024 - April 2024</i>
+
 * <b>Tech Stack:</b> C++, ROS, Git
 * <b> Summary </b>
     -  <p style="text-align: justify;">Implemented MPPI on an RC car platform using C++ and ROS to enable aggressive driving.</p>

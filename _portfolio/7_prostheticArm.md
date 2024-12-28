@@ -8,6 +8,8 @@ collection: portfolio
 
 [[GitHub]](https://github.com/SahilTChaudhary/Prosthetic-Arm.git)
 
+<i>March 2021 - April 2021</i>
+
 * <b>Tech Stack:</b> SolidWorks, Additive Manufacturing, Arduino Uno, C++
 * <b> Summary </b>
     -  <p style="text-align: justify;">Developed a CAD model and functional prototype of a cost-effective Prosthetic Arm using Additive Manufacturing and Arduino Uno.</p>

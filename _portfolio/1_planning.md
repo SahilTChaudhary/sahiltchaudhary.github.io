@@ -8,6 +8,8 @@ collection: portfolio
 
 [[GitHub]](https://github.com/RedTorus/quad-sdk-PlanningProject)[[Report]](http://sahiltchaudhary.github.io/files/Planning_Final_Report.pdf)
 
+<i>September 2024 - November 2024</i>
+
 * <b>Tech Stack:</b> C++, ROS, Git, Gazebo
 * <b> Summary </b>
     -  <p style="text-align: justify;">Demonstrated a global path planner for a quadruped robot using C++ and ROS, that accounts for dynamic obstacles and the z-height of the robot.</p>

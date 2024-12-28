@@ -8,6 +8,8 @@ collection: portfolio
 
 [[GitHub]](https://github.com/RichaaM/Pinbot)[[Report]](http://sahiltchaudhary.github.io/files/IRL_Final_Project_Report.pdf)
 
+<i>September 2024 - November 2024</i>
+
 * <b>Tech Stack:</b> Python, PyTorch, Unity, Git
 * <b> Summary </b>
     -  <p style="text-align: justify;">Developed a reinforcement learning agent using Proximal Policy Optimization (PPO) to play the pinball game Total Nuclear Annihilation.</p>

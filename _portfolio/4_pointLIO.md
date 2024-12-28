@@ -8,6 +8,8 @@ collection: portfolio
 
 [[GitHub]](https://github.com/taylorpool/point_lio)[[Report]](http://sahiltchaudhary.github.io/files/Point_LIO_Final.pdf)
 
+<i>February 2024 - April 2024</i>
+
 * <b>Tech Stack:</b> C++, ROS, Git, GTSAM
 * <b> Summary </b>
     -  <p style="text-align: justify;">Implemented the Point-LIO algorithm using C++ and GTSAM, addressing the limitations of scan-based LiDAR processing.</p>

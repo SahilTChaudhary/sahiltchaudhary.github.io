@@ -8,6 +8,8 @@ collection: portfolio
 
 [[GitHub]](https://github.com/SahilTChaudhary/Modern-Control-Theory)[[Report]](http://sahiltchaudhary.github.io/files/CMUBuggy.pdf)
 
+<i>October 2023 - December 2023</i>
+
 * <b>Tech Stack:</b> Python, Webots
 * <b> Summary </b>
     -  <p style="text-align: justify;">Deployed and tuned a PID controller for a Tesla Model 3, using Webots and Python.</p>
