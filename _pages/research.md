@@ -20,17 +20,17 @@ redirect_from:
       * As the number of robots grow, it becomes difficult for a single user to keep track and manage all of them. Hence, the aim is to make the system such that increasing the number of robots does not increase the burden on the user.
       * The way to achieve that is to make the **robots fully autonomous and decentralized**.
 
-  In this project, the bulk of my work and contributions are as follows:
+    In this project, the bulk of my work and contributions are as follows:
 
   * <h3>Comms-Aware Planning</h3>
     * Developed a **novel algorithm to maintain communication fidelity among robots** in a convoy, by extending off an existing work.
       * The aim is to ensure that all robots in the field, irrespective of whether they are in a convoy or not, must be able to communicate with the Basestation, i.e., the user.
       * Each robot communicates via proprietary radios, and each radio has the capability to act as a **comms relay**.
-    * <h4>The existing approach</h4>
-      * **Peeling off** refers to a robot in a convoy exiting the convoy and acting as a stationary comms relay for the other robots.
-      * The approach involves mapping out all the possible connections between all nodes (in this case, the radios) and **generating a graph**.
-      * Then using that graph, the algorithm **generates a Max-Min Spanning Tree** such that, for each radio, out of all possible connections to the **central node, i.e., the root of the tree** (which is the Basestation), the connection route chosen is such that the **strongest of the weakest links is chosen**.
-      * Hence, the **algorithm essentially gives the best possible connection**. This connection is then monitored to track which robot goes out of comms, and then the appropriate behaviour is chosen.
+      * <h3>The existing approach</h3>
+        * **Peeling off** refers to a robot in a convoy exiting the convoy and acting as a stationary comms relay for the other robots.
+        * The approach involves mapping out all the possible connections between all nodes (in this case, the radios) and **generating a graph**.
+        * Then using that graph, the algorithm **generates a Max-Min Spanning Tree** such that, for each radio, out of all possible connections to the **central node, i.e., the root of the tree** (which is the Basestation), the connection route chosen is such that the **strongest of the weakest links is chosen**.
+        * Hence, the **algorithm essentially gives the best possible connection**. This connection is then monitored to track which robot goes out of comms, and then the appropriate behaviour is chosen.
     * Formulated a **modified Max-Min Spanning Tree to optimize the distance the robots travel before peeling off**.
       * My modification to the above algorithm involves **optimizing the connection to multiple nodes of interest, i.e., multiple central nodes**.
       * The assumption is that connecting to any central node ensures connection with the basestation. **Hence, for each robot in the network, the algorithm finds the best route to the nearest central node**.
@@ -42,7 +42,7 @@ redirect_from:
       * **Field testing on physical robots has also been conducted, demonstrating the feasibility of the algorithm**.
 
     <div style="text-align:center">
-    <img src="/images/maxmin_tree.png" alt="maxmintree" style="width:500px;height:400px;">
+    <img src="/images/maxmin_tree.png" alt="maxmintree" style="width:800px;height:300px;">
     </div>
     <figcaption style="text-align: center;"><u><em>Max-Min Tree generation from Graph</em></u></figcaption>
   
