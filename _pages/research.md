@@ -46,38 +46,28 @@ redirect_from:
     </div>
     <figcaption style="text-align: center;"><u><em>Max-Min Tree generation from Graph</em></u></figcaption>
   
-    <figure>
-      <video controls width="640" height="360">
-        <source src="/images/Multi_convoy_comms_peeloff.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <figcaption style="text-align: center;">Multi-Convoy Comms-Peeloff demonstration in simulation</figcaption>
-    </figure>
+    <div style="text-align:center">
+    <video src="/images/Multi_convoy_comms_peeloff.mp4" controls="controls" style="max-width: 750px;"></video>
+    </div>
+    <figcaption style="text-align: center;"><u><em>Multi-Convoy Comms-Peeloff demonstration in simulation</em></u></figcaption>
 
   * <h3>Convoy</h3>
     * Developed a **Decentralized Heterogeneous Convoy framework** comprising RC Cars and Quadruped Robots.
       * Each robot has its own autonomy for navigation. Furthermore, each robot makes decisions relates to convoy order, waypoints etc. individually. This ensures consistency among robots, and hence enables a **decentralized convoy structure**.
       * The **Heterogeneous Convoy** framework incorporates RC cars and Quadruped robots such that the ordering, waypoints and leader-follower mechanisms do not slow the convoy down, as quadrupeds are significantly slower than the RC cars. Alternatively, there is an option to ensure that the quadruped stays with the convoy, resulting in the convoy slowing down significantly.
     
-      <figure>
-        <video controls width="640" height="360">
-          <source src="/images/hetero_convoy.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        <figcaption style="text-align: center;">Heterogeneous Convoy demonstration</figcaption>
-      </figure>
+      <div style="text-align:center">
+      <video src="/images/hetero_convoy.mp4" controls="controls" style="max-width: 750px;"></video>
+      </div>
+      <figcaption style="text-align: center;"><u><em>Heterogeneous Convoy demonstration</em></u></figcaption>
 
     * **Designed an algorithm enabling rendezvous at intersections and coordinated return as a convoy**.
       * The algorithm finds the nearest common intersection (individually on each robot to ensure a **decentralized algorithm**) for all robots in a convoy based off of Backtracking waypoints, and then enables the robots to then move to a desired location as a convoy.
     
-      <figure>
-        <video controls width="640" height="360">
-          <source src="/images/rendezvous.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        <figcaption style="text-align: center;">Rendezvous feature demonstration</figcaption>
-      </figure>
-
+      <div style="text-align:center">
+      <video src="/images/rendezvous.mp4" controls="controls" style="max-width: 750px;"></video>
+      </div>
+      <figcaption style="text-align: center;"><u><em>Rendezvous feature demonstration</em></u></figcaption>
 
   * <h3>Payload Redesign</h3>
     * Redesigned the payload of RC Cars and Quadruped Robots that are part of a heterogenous convoy to improve performance and **serviceability**.
