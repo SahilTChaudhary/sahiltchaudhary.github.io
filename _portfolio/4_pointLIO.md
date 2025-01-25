@@ -18,7 +18,7 @@ collection: portfolio
     -  <p style="text-align: justify;">My role: Implemented the EKF.</p>
 
 * <b>In-Depth</b>
-    *  <p style="text-align: justify;"><b>Introduction</b><br>This project was completed as part of the Robot Localization and Mapping (16-833) course at CMU. This project presents Point-LIO, a novel filtering based approach to LiDAR-Inertial Odometry. The algorithm treats inputs from Inertial Measurement Units (IMUs) and LiDAR sensors as proper measurement updates within an Extended Kalman Filter (EKF) framework. Our objective was to evaluate the performance of the Point-LIO system on data collected on ground vehicles navigating through long, narrow corridors. Given the necessity for real-time processing, we implemented the algorithm in C++. Furthermore, we enhanced the algorithm's accuracy further by incorporating an extension based on the Unscented Kalman Filter (UKF) - demonstrating the capability to estimate robot state during aggresive motion. </p>
+    *  <p style="text-align: justify;"><b>Introduction</b><br>This project was completed as part of the Robot Localization and Mapping (16-833) course at CMU. This project presents Point-LIO, a novel filtering based approach to LiDAR-Inertial Odometry. The algorithm treats inputs from Inertial Measurement Units (IMUs) and LiDAR sensors as proper measurement updates within an Extended Kalman Filter (EKF) framework. Our objective was to evaluate the performance of the Point-LIO system on data collected on ground vehicles navigating through long, narrow corridors. Given the necessity for real-time processing, we implemented the algorithm in C++.</p>
 
     <div style="text-align:center">
     <img src="/images/point_lio_cover.png" alt="point_lio_cover" style="width:600px;height:300px;">
@@ -43,16 +43,16 @@ collection: portfolio
 * <p style="text-align: justify;"><b>Challenges</b><br>The major challenge was achieving the time syncing between LiDAR and IMU data. Unfortunately, due to the fact that LIDAR measurements arrive in a packet of 30,000 points every tenth of a second, their distribution across any given time window is non-uniform. The result is that we can no longer assume that all LIDAR measurements have been received prior to a given IMU measurement. And vice versa. We decided to overcome this issue by allocating individual buffers for both IMU and LIDAR points. When a IMU measurement was received, we processed all LIDAR points before the IMU measurement. Similarly, when a LIDAR point was received, we processed all IMU measurements prior to the time stamp associated with the LIDAR point. Unfortunately, this still resulted in negative time differences between the current state of the filter, and the time stamp associated with the current measurement being processed.</p>
 
 * <b>Results</b>
-    <p>The results for IMU dead reckoning and IMU data modeled as output of the system are shown in the figures below.</p>
+    <p>The result for IMU dead reckoning is shown in the figure below.</p>
 
     <div style="text-align:center">
     <img src="/images/pointlio_traj_plot.png" alt="pointLIO_traj_plot" style="width:600px;height:300px;">
     </div>
-    <figcaption style="text-align: center;"><u><em>Fig-3 Trajectory and landmark visualization</em></u></figcaption>
+    <figcaption style="text-align: center;"><u><em>Fig-3 Trajectory visualization</em></u></figcaption>
 
-    <div style="text-align:center">
+    <!-- <div style="text-align:center">
     <img src="/images/pointlio_traj_plot-2.png" alt="pointLIO_traj_plot-2" style="width:600px;height:300px;">
     </div>
-    <figcaption style="text-align: center;"><u><em>Fig-4 Trajectory and landmark visualization</em></u></figcaption>
+    <figcaption style="text-align: center;"><u><em>Fig-4 Trajectory and landmark visualization</em></u></figcaption> -->
 
-    <p>We have presented our findings implementing Point-LIO: an algorithm for LiDAR-Inertial Odometry that seeks to replace scan registration with point-by-point registration. We implemented our approach in C++ from scratch with a significant amount of effort dedicated towards mapping, processing LiDAR points, and also forming the Extended and Unscented Kalman Filters on-manifold. We found that Point-LIO is unsuitable for real-time computation given the inherently sequential nature of the processing requirements. Furthermore, we found that the time synchronization between each individual LiDAR point and IMU measurement to be difficult to implement properly and wholly non-intuitive.</p>
+    <p>We have presented our findings implementing Point-LIO: an algorithm for LiDAR-Inertial Odometry that seeks to replace scan registration with point-by-point registration. We implemented our approach in C++ from scratch with a significant amount of effort dedicated towards mapping, processing LiDAR points, and also forming the Extended Kalman Filter on-manifold. We found that Point-LIO is unsuitable for real-time computation given the inherently sequential nature of the processing requirements. Furthermore, we found that the time synchronization between each individual LiDAR point and IMU measurement to be difficult to implement properly and wholly non-intuitive.</p>

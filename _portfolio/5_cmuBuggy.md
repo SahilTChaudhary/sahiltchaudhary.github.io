@@ -14,7 +14,7 @@ collection: portfolio
 * <b> Summary </b>
     -  <p style="text-align: justify;">Deployed and tuned a PID controller for a Tesla Model 3, using Webots and Python.</p>
     -  <p style="text-align: justify;">Modeled the system as a Kinematic Bicycle Model, and analyzed its controllability and stability.</p>
-    -  <p style="text-align: justify;">Implemented and compared different controllers, including LQR and MPC, while integrating an A<sup>*</sup> planner and EKF-SLAM framework.</p>
+    -  <p style="text-align: justify;">Compared numerical optimization methods like LQR and MPC, while integrating an A<sup>*</sup> planner and EKF-SLAM framework achieving a maximum cross-track error of 4m.</p>
     -  <p style="text-align: justify;">My role: Implemented everything, as it was a solo project.</p>
 
 * <b>In-Depth</b>
