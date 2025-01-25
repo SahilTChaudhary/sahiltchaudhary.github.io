@@ -27,14 +27,14 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # Build job
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Ruby
+      - name: Set up Ruby using rbenv
         run: |
           sudo apt-get update
           sudo apt-get install -y libssl-dev libreadline-dev zlib1g-dev
@@ -43,8 +43,8 @@ jobs:
           echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
           echo 'eval "$(rbenv init -)"' >> ~/.bashrc
           source ~/.bashrc
-          rbenv install 3.1.4
-          rbenv global 3.1.4
+          ~/.rbenv/bin/rbenv install 3.1.4
+          ~/.rbenv/bin/rbenv global 3.1.4
           mkdir -p /opt/hostedtoolcache/Ruby/3.1.4/x64
           touch /opt/hostedtoolcache/Ruby/3.1.4/x64.complete
 
@@ -54,18 +54,22 @@ jobs:
           ruby-version: 3.1
           bundler-cache: true
 
+      - name: Build the Jekyll site
+        run: bundle exec jekyll build
+
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
-      - name: Build with Jekyll
-        # Outputs to the './_site' directory by default
-        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
-        env:
-          JEKYLL_ENV: production
+
       - name: Upload artifact
-        # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v3
 
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+          
   # Deployment job
   deploy:
     environment:
