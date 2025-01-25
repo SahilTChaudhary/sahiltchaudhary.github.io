@@ -1,0 +1,455 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+
+<meta charset="utf-8">
+
+
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>PinBot – Reinforcement Learning on a Pinball Machine - Sahil T Chaudhary</title>
+
+
+
+
+
+
+
+<meta property="og:locale" content="en-US">
+<meta property="og:site_name" content="Sahil T Chaudhary">
+<meta property="og:title" content="PinBot – Reinforcement Learning on a Pinball Machine">
+
+
+  <link rel="canonical" href="https://SahilTChaudhary.github.io/blogjekyll/portfolio/2_pinbot/">
+  <meta property="og:url" content="https://SahilTChaudhary.github.io/blogjekyll/portfolio/2_pinbot/">
+
+
+
+  <meta property="og:description" content="Developed a reinforcement learning agent using Proximal Policy Optimization (PPO) to play the pinball game Total Nuclear Annihilation.">
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Sahil T Chaudhary",
+      "url" : "https://SahilTChaudhary.github.io/blogjekyll",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="https://SahilTChaudhary.github.io/blogjekyll/feed.xml" type="application/atom+xml" rel="alternate" title="Sahil T Chaudhary Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://SahilTChaudhary.github.io/blogjekyll/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+    
+
+<!-- start custom head snippets -->
+
+<link rel="apple-touch-icon" sizes="57x57" href="https://SahilTChaudhary.github.io/blogjekyll/images/apple-touch-icon-57x57.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="60x60" href="https://SahilTChaudhary.github.io/blogjekyll/images/apple-touch-icon-60x60.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="72x72" href="https://SahilTChaudhary.github.io/blogjekyll/images/apple-touch-icon-72x72.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="76x76" href="https://SahilTChaudhary.github.io/blogjekyll/images/apple-touch-icon-76x76.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="114x114" href="https://SahilTChaudhary.github.io/blogjekyll/images/apple-touch-icon-114x114.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="120x120" href="https://SahilTChaudhary.github.io/blogjekyll/images/apple-touch-icon-120x120.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="144x144" href="https://SahilTChaudhary.github.io/blogjekyll/images/apple-touch-icon-144x144.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="152x152" href="https://SahilTChaudhary.github.io/blogjekyll/images/apple-touch-icon-152x152.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="180x180" href="https://SahilTChaudhary.github.io/blogjekyll/images/apple-touch-icon-180x180.png?v=M44lzPylqQ">
+<link rel="icon" type="image/png" href="https://SahilTChaudhary.github.io/blogjekyll/images/favicon-32x32.png?v=M44lzPylqQ" sizes="32x32">
+<link rel="icon" type="image/png" href="https://SahilTChaudhary.github.io/blogjekyll/images/android-chrome-192x192.png?v=M44lzPylqQ" sizes="192x192">
+<link rel="icon" type="image/png" href="https://SahilTChaudhary.github.io/blogjekyll/images/favicon-96x96.png?v=M44lzPylqQ" sizes="96x96">
+<link rel="icon" type="image/png" href="https://SahilTChaudhary.github.io/blogjekyll/images/favicon-16x16.png?v=M44lzPylqQ" sizes="16x16">
+<link rel="manifest" href="https://SahilTChaudhary.github.io/blogjekyll/images/manifest.json?v=M44lzPylqQ">
+<link rel="mask-icon" href="https://SahilTChaudhary.github.io/blogjekyll/images/safari-pinned-tab.svg?v=M44lzPylqQ" color="#000000">
+<link rel="shortcut icon" href="/images/favicon.ico?v=M44lzPylqQ">
+<meta name="msapplication-TileColor" content="#000000">
+<meta name="msapplication-TileImage" content="https://SahilTChaudhary.github.io/blogjekyll/images/mstile-144x144.png?v=M44lzPylqQ">
+<meta name="msapplication-config" content="https://SahilTChaudhary.github.io/blogjekyll/images/browserconfig.xml?v=M44lzPylqQ">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="https://SahilTChaudhary.github.io/blogjekyll/assets/css/academicons.css"/>
+
+<script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="https://SahilTChaudhary.github.io/blogjekyll/">Sahil T Chaudhary</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://SahilTChaudhary.github.io/blogjekyll/education/">Education</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://SahilTChaudhary.github.io/blogjekyll/industryexperience/">Work Experience</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://SahilTChaudhary.github.io/blogjekyll/research/">Research</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://SahilTChaudhary.github.io/blogjekyll/portfolio/">Projects</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <div class="sidebar sticky">
+  
+
+
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  <div class="author__avatar">
+    
+    	<img src="https://SahilTChaudhary.github.io/blogjekyll/images/profile.png" class="author__avatar" alt="Sahil T Chaudhary">
+    
+  </div>
+
+  <div class="author__content">
+    <h3 class="author__name">Sahil T Chaudhary</h3>
+    <p class="author__bio">I am a passionate Robotics Engineer looking to leave a mark</p>
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> Pittsburgh, PA</li>
+      
+      
+      
+      
+        <li><a href="mailto:sahilchaudhary.sc36@gmail.com"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> Email</a></li>
+      
+      
+       
+      
+      
+      
+      
+        <li><a href="https://www.linkedin.com/in/sahiltc/"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+      
+      
+      
+      
+      
+      
+        <li><a href="https://github.com/SahilTChaudhary"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="PinBot – Reinforcement Learning on a Pinball Machine">
+    <meta itemprop="description" content="Developed a reinforcement learning agent using Proximal Policy Optimization (PPO) to play the pinball game Total Nuclear Annihilation.">
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">PinBot – Reinforcement Learning on a Pinball Machine
+</h1>
+          
+        
+        
+        
+        
+             
+        
+    
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        <p><a href="https://github.com/RichaaM/Pinbot">[GitHub]</a><a href="http://sahiltchaudhary.github.io/files/IRL_Final_Project_Report.pdf">[Report]</a></p>
+
+<p><i>September 2024 - November 2024</i></p>
+
+<ul>
+  <li><b>Tech Stack:</b> Python, PyTorch, Unity, Git</li>
+  <li><b> Summary </b>
+    <ul>
+      <li>
+        <p style="text-align: justify;">Developed a reinforcement learning agent using Proximal Policy Optimization (PPO) to play the pinball game Total Nuclear Annihilation.</p>
+      </li>
+      <li>
+        <p style="text-align: justify;">Trained the agent in a simulated environment using the Unity ML-Agents framework, achieving performance comparable to an amateur human player in 10k epochs.</p>
+      </li>
+      <li>
+        <p style="text-align: justify;">Applied transfer learning to adapt the agent for a physical pinball machine (ongoing work).</p>
+      </li>
+      <li>
+        <p style="text-align: justify;">My role: Helped setup the simulation framework, and also worked on implementing PPO.</p>
+      </li>
+    </ul>
+  </li>
+  <li><b>In-Depth</b>
+    <ul>
+      <li>
+        <p style="text-align: justify;"><b>Introduction</b><br />This project was completed as part of the Introduction to Robot Learning (16-831) course at CMU. The aim of this project was to apply reinforcement learning to play the classic arcade game of pinball. Two settings were considered - simulation and physical hardware. The performance of this agent was evaluated against human players.</p>
+      </li>
+    </ul>
+
+    <div style="text-align:center">
+  <img src="/images/tna.png" alt="tna" style="width:500;height:300px;" />
+  </div>
+    <figcaption style="text-align: center;"><u><em>Fig-1 The physical setup of the Pinball game of Total Nuclear Annihilation (TNA)</em></u></figcaption>
+
+    <ul>
+      <li>
+        <p style="text-align: justify;"><b>Motivation</b><br />Reinforcement learning has been successfully applied to games like Go, Pong, and Dota 2. Games serve as ideal learning environments due to their defined boundaries, clear objectives, and opportunities for strategic decision making. Pinball is a classic arcade game in which a player uses two flippers to keep a ball on the playfield while attempting to hit various targets. Pinball is dynamic and requires highly reactive game play and control. The objective is to maximize the score of the game over the course of three balls (turns). This makes pinball an ideal candidate for training an RL agent, because the rewards and actions are very clearly defined.</p>
+      </li>
+      <li>
+        <p style="text-align: justify;"><b>Methodology</b><br />A digital version of TNA was sourced from the Visual Pinball X project, and was trained in a simulation environment using the Unity ML-Agents framework. After training in sim, the goal was to use the learned weights and implement transfer learning for the physical game, as this would speed up training drastically. The RL model used for the same was Proximal Policy Optimization (PPO).</p>
+      </li>
+      <li>
+        <p style="text-align: justify;"><b>PPO</b><br />The details of the training and model parameters are given below.</p>
+
+        <ul>
+          <li>
+            <p style="text-align: justify;"><b>State Space</b><br />The state/observation space is continuous, and includes five state observations: a downsampled image of the playfield; the ball’s x and y position; and the ball’s x and y velocity.</p>
+          </li>
+          <li>
+            <p style="text-align: justify;"><b>Action Space</b><br />The action space is discrete, and includes a vector of four discrete actions. The first action, idle, releases the flippers. The second and third actions activate the left and right flippers, respectively. The fourth action activates both flippers simultaneously. The agent samples one action 20 times per second.</p>
+          </li>
+          <li>
+            <p style="text-align: justify;"><b>Reward Function</b><br />The reward function is calculated by factoring in the score, play time, ball position, and ball loss. The score is the raw game score tracked by the machine, and it is the direct metric we seek to increase. A large penalty when a ball is lost to encourage the agent from prematurely ending a game. Furthermore, to encourage activity in the typically sparse environment, a small reward is added whenever the ball is on the field above the flippers, and detracted when at or below. This position-based reward is necessary, as a simple time-based award would reach a local minima where the agent simply traps the ball on the flipper. We sum these three components to get the reward function as shown in Fig-2.</p>
+          </li>
+        </ul>
+
+        <div style="text-align:center">
+  <img src="/images/reward_formulation.png" alt="reward" style="width:300;height:200px;" />
+  </div>
+        <figcaption style="text-align: center;"><u><em>Fig-2 Reward formulation</em></u></figcaption>
+
+        <ul>
+          <li>
+            <p style="text-align: justify;"><b>Model Architecture</b><br />The current model is set relatively small, featuring 1 layer and 128 hidden units. Experimentation with more layers and units is needed, but a compact network was initially favored to prevent overfitting and reduce training time. A recurrent neural network (RNN) is used to give the agent a short-term memory of 35 frames (about 1.5 seconds). This allows the agent to better factor in the game dynamics, as a single game frame does not convey ball velocity or acceleration. For the game frame image, a simple encoder with two convolutional layers is used to transform frames to the agent’s space. The agent’s reward signals are influenced by a gamma γ of 0.99, encouraging the agent to care about long-term rewards. To update the model, an epsilon ϵ of 0.2 was used, which will keep the updates more stable, but slow the training process slightly. A learning rate of 3e − 4 is implemented, with a linear schedule.</p>
+          </li>
+        </ul>
+
+        <div style="text-align:center">
+  <img src="/images/training_framework.png" alt="training" style="width:300;height:600;" />
+  </div>
+        <figcaption style="text-align: center;"><u><em>Fig-3 An overview of the training framework</em></u></figcaption>
+      </li>
+    </ul>
+  </li>
+  <li><b>Results</b>
+    <p>After training for 90k steps, the model was evaluated against three baselines: a human player, a randomized agent, and no agent. 10 cases were run for each scenario, with aggregated results below.</p>
+
+    <div style="text-align:center">
+  <img src="/images/training_results.png" alt="results" style="width:600px;height:150px;" />
+  </div>
+    <figcaption style="text-align: center;"><u><em>Table-1 Performance of the trained agent compared against baselines</em></u></figcaption>
+
+    <div style="text-align:center">
+  <img src="/images/cumrew_eplen.png" alt="cumrew_eplen" style="width:700px;height:300px;" />
+  </div>
+    <figcaption style="text-align: center;"><u><em>Fig-4 Cumulative Reward and Episode Length</em></u></figcaption>
+
+    <div style="text-align:center">
+  <img src="/images/rl_losses.png" alt="losses" style="width:1000px;height:200px;" />
+  </div>
+    <figcaption style="text-align: center;"><u><em>Fig-5 Losses</em></u></figcaption>
+
+    <p>In this work, we developed a reinforcement learning model to play pinball in simulation, showing heightened performance to random actions, and near-comparable performance to a human player.</p>
+  </li>
+</ul>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+
+
+      </footer>
+
+      
+
+      
+
+
+  <nav class="pagination">
+    
+      <a href="https://SahilTChaudhary.github.io/blogjekyll/portfolio/1_planning/" class="pagination--pager" title="Quadruped Path Planner for Dynamic Environments
+">Previous</a>
+    
+    
+      <a href="https://SahilTChaudhary.github.io/blogjekyll/portfolio/3_mppi_/" class="pagination--pager" title="Model Predictive Path Integral Control
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+<a href="/sitemap/">Sitemap</a>
+<!-- end custom footer snippets -->
+
+        
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+      <li><a href="http://github.com/SahilTChaudhary"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    <li><a href="https://SahilTChaudhary.github.io/blogjekyll/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2025 Sahil T Chaudhary. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <script src="https://SahilTChaudhary.github.io/blogjekyll/assets/js/main.min.js"></script>
+
+
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+
+
+  </body>
+</html>
+

@@ -1,0 +1,449 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+
+<meta charset="utf-8">
+
+
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Quadruped Path Planner for Dynamic Environments - Sahil T Chaudhary</title>
+
+
+
+
+
+
+
+<meta property="og:locale" content="en-US">
+<meta property="og:site_name" content="Sahil T Chaudhary">
+<meta property="og:title" content="Quadruped Path Planner for Dynamic Environments">
+
+
+  <link rel="canonical" href="https://SahilTChaudhary.github.io/blogjekyll/portfolio/1_planning/">
+  <meta property="og:url" content="https://SahilTChaudhary.github.io/blogjekyll/portfolio/1_planning/">
+
+
+
+  <meta property="og:description" content="Implemented a global path planner for a quadruped robot moving in dynamic environments.">
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Sahil T Chaudhary",
+      "url" : "https://SahilTChaudhary.github.io/blogjekyll",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="https://SahilTChaudhary.github.io/blogjekyll/feed.xml" type="application/atom+xml" rel="alternate" title="Sahil T Chaudhary Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://SahilTChaudhary.github.io/blogjekyll/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+    
+
+<!-- start custom head snippets -->
+
+<link rel="apple-touch-icon" sizes="57x57" href="https://SahilTChaudhary.github.io/blogjekyll/images/apple-touch-icon-57x57.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="60x60" href="https://SahilTChaudhary.github.io/blogjekyll/images/apple-touch-icon-60x60.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="72x72" href="https://SahilTChaudhary.github.io/blogjekyll/images/apple-touch-icon-72x72.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="76x76" href="https://SahilTChaudhary.github.io/blogjekyll/images/apple-touch-icon-76x76.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="114x114" href="https://SahilTChaudhary.github.io/blogjekyll/images/apple-touch-icon-114x114.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="120x120" href="https://SahilTChaudhary.github.io/blogjekyll/images/apple-touch-icon-120x120.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="144x144" href="https://SahilTChaudhary.github.io/blogjekyll/images/apple-touch-icon-144x144.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="152x152" href="https://SahilTChaudhary.github.io/blogjekyll/images/apple-touch-icon-152x152.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="180x180" href="https://SahilTChaudhary.github.io/blogjekyll/images/apple-touch-icon-180x180.png?v=M44lzPylqQ">
+<link rel="icon" type="image/png" href="https://SahilTChaudhary.github.io/blogjekyll/images/favicon-32x32.png?v=M44lzPylqQ" sizes="32x32">
+<link rel="icon" type="image/png" href="https://SahilTChaudhary.github.io/blogjekyll/images/android-chrome-192x192.png?v=M44lzPylqQ" sizes="192x192">
+<link rel="icon" type="image/png" href="https://SahilTChaudhary.github.io/blogjekyll/images/favicon-96x96.png?v=M44lzPylqQ" sizes="96x96">
+<link rel="icon" type="image/png" href="https://SahilTChaudhary.github.io/blogjekyll/images/favicon-16x16.png?v=M44lzPylqQ" sizes="16x16">
+<link rel="manifest" href="https://SahilTChaudhary.github.io/blogjekyll/images/manifest.json?v=M44lzPylqQ">
+<link rel="mask-icon" href="https://SahilTChaudhary.github.io/blogjekyll/images/safari-pinned-tab.svg?v=M44lzPylqQ" color="#000000">
+<link rel="shortcut icon" href="/images/favicon.ico?v=M44lzPylqQ">
+<meta name="msapplication-TileColor" content="#000000">
+<meta name="msapplication-TileImage" content="https://SahilTChaudhary.github.io/blogjekyll/images/mstile-144x144.png?v=M44lzPylqQ">
+<meta name="msapplication-config" content="https://SahilTChaudhary.github.io/blogjekyll/images/browserconfig.xml?v=M44lzPylqQ">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="https://SahilTChaudhary.github.io/blogjekyll/assets/css/academicons.css"/>
+
+<script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="https://SahilTChaudhary.github.io/blogjekyll/">Sahil T Chaudhary</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://SahilTChaudhary.github.io/blogjekyll/education/">Education</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://SahilTChaudhary.github.io/blogjekyll/industryexperience/">Work Experience</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://SahilTChaudhary.github.io/blogjekyll/research/">Research</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://SahilTChaudhary.github.io/blogjekyll/portfolio/">Projects</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <div class="sidebar sticky">
+  
+
+
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  <div class="author__avatar">
+    
+    	<img src="https://SahilTChaudhary.github.io/blogjekyll/images/profile.png" class="author__avatar" alt="Sahil T Chaudhary">
+    
+  </div>
+
+  <div class="author__content">
+    <h3 class="author__name">Sahil T Chaudhary</h3>
+    <p class="author__bio">I am a passionate Robotics Engineer looking to leave a mark</p>
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> Pittsburgh, PA</li>
+      
+      
+      
+      
+        <li><a href="mailto:sahilchaudhary.sc36@gmail.com"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> Email</a></li>
+      
+      
+       
+      
+      
+      
+      
+        <li><a href="https://www.linkedin.com/in/sahiltc/"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+      
+      
+      
+      
+      
+      
+        <li><a href="https://github.com/SahilTChaudhary"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Quadruped Path Planner for Dynamic Environments">
+    <meta itemprop="description" content="Implemented a global path planner for a quadruped robot moving in dynamic environments.">
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Quadruped Path Planner for Dynamic Environments
+</h1>
+          
+        
+        
+        
+        
+             
+        
+    
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        <p><a href="https://github.com/RedTorus/quad-sdk-PlanningProject">[GitHub]</a><a href="http://sahiltchaudhary.github.io/files/Planning_Final_Report.pdf">[Report]</a></p>
+
+<p><i>September 2024 - November 2024</i></p>
+
+<ul>
+  <li><b>Tech Stack:</b> C++, ROS, Git, Gazebo</li>
+  <li><b> Summary </b>
+    <ul>
+      <li>
+        <p style="text-align: justify;">Demonstrated a global path planner for a quadruped robot using C++ and ROS, that accounts for dynamic obstacles and the z-height of the robot.</p>
+      </li>
+      <li>
+        <p style="text-align: justify;">Executed a Lazy-PRM with D* Lite planner with kinodynamic constraints and state space comprising x, y, z, yaw, and velocity components.</p>
+      </li>
+      <li>
+        <p style="text-align: justify;">Achieved a success rate of 95%.</p>
+      </li>
+      <li>
+        <p style="text-align: justify;">My role: Implemented the z-height controller, and helped implement PRM-D* Lite.</p>
+      </li>
+    </ul>
+  </li>
+  <li><b>In-Depth</b>
+    <ul>
+      <li>
+        <p style="text-align: justify;"><b>Introduction</b><br />This project was completed as part of the Planning and Decision-making in Robotics (16-782) course at CMU. The aim of this project was to implement a Lazy PRM-D* Lite global path planner. Experimental validation showed that our planner achieved a 95% success rate.</p>
+      </li>
+    </ul>
+
+    <div style="text-align:center">
+  <img src="/images/spirit.png" alt="spirit" style="width:500;height:300px;" />
+  </div>
+    <figcaption style="text-align: center;"><u><em>Fig-1 Project Spirit Quadruped Robot</em></u></figcaption>
+
+    <ul>
+      <li>
+        <p style="text-align: justify;"><b>Motivation</b><br />The motivation was to develop a planner that can work in dynamic environments, by replanning quickly while also generating optimal paths. Furthermore, we needed the planner to also consider the z-height of the robot, so that it could, for example, go under a table or over a bed. To address these objectives, we implemented Lazy PRM-D* while considering z as part of the state.</p>
+      </li>
+      <li>
+        <p style="text-align: justify;"><b>Lazy PRM with D* and Kinodynamic constraints</b><br />The state vector of the planner is &lt;x, y, z, v<sub>x</sub>, v<sub>y</sub>, v<sub>z</sub>&gt;. This section will give a brief overview of our planner.</p>
+
+        <ul>
+          <li>
+            <p style="text-align: justify;"><b>PRM Overview</b><br />The PRM (Probabilistic Roadmap) serves as a representation of feasible motion paths through the environment. With a generated map and a given start and goal state, a search-based planner like A* can be used in conjunction to retrieve a path, if it exists. However, the PRM generation process is computationally expensive and hence performed offline. The advantage lies in the fact that once generated, the graph can be used to find paths to any combination of start and goal states. Typically, while generating the PRM, sampled nodes that lie in obstacles are rejected, ensuring that the graph represents only collision-free paths. However, this approach is only effective in static environments, as any changes in the environment will necessitate regeneration of the PRM.</p>
+          </li>
+          <li>
+            <p style="text-align: justify;">To address this limitation, a modification to PRM for dynamic environments is called Lazy PRM. Unlike traditional PRM, this approach does not reject nodes that lie within obstacles. Instead, it retains them in the graph, but with an infinite cost. This modification ensures that the roadmap remains valid even if the environment changes. When an obstacle moves or disappears, the cost of the corresponding nodes can be dynamically updated rather than requiring a complete regeneration of the graph. This small modification enables PRMs to be used in dynamic environments.</p>
+          </li>
+          <li>
+            <p style="text-align: justify;"><b>A* Search Overview</b><br />The cost updation and re-planning is handled by the A* search, or for a faster and more optimal re-planning algorithm, D* Lite. D* Lite is a modification of A* that reuses and leverages information gained during previous searches, hence making the search faster, as replanning is not done from scratch, unlike in A*. Furthermore, since it is essentially A*, the path obtained is optimal, for a given the map. As long as we can create a very dense PRM, which is feasible since it's done offline, A* can find the most optimal path. If speed is a priority, weighted-A* can be used instead.<p> 
+
+</p></p>
+          </li>
+        </ul>
+        <div style="text-align:center">
+  <img src="/images/planning_path.png" alt="planner_paths" style="width:300;height:600;" />
+  </div>
+        <figcaption style="text-align: center;"><u><em>Fig-2 Visualization of the path generated by the planner</em></u></figcaption>
+
+        <ul>
+          <li>
+            <p style="text-align: justify;"><b>Kinodynamic Constraints</b><br />Additionally, the planner incorporates kinodynamic constraints into its re-planning framework. These constraints ensure that the transitions between states adhere to the physical and dynamic limitations of the system. Metrics such as stance time, accelerations, and ground reaction forces (GRFs) are calculated to validate the feasibility of motion between states. This integration guarantees that the paths generated during re-planning are not only efficient but also physically realizable, which is critical for applications such as quadruped locomotion or other systems requiring adherence to dynamic constraints.<p> 
+
+</p></p>
+          </li>
+          <li>
+            <p style="text-align: justify;"><b>Planning in z</b><br />One of the main objectives was to add a third dimension, z (height), to the planner to enable height-aware navigation. However, instead of directly sampling z, which would significantly increase the state space size and planning complexity, a 'lazy' approach has been implemented to improve the planning speed. The way this is done is by first checking if the nominal z of the robot collides with obstacles for a given x and y location. If it clears the obstacle check, that is, no collision is detected, z is left unchanged. However, if it collides, the minimum z (the lowest height at which the robot can successfully walk) is checked against the obstacle. If it passes the check, the robot height is set to z minimum, effectively allowing crouching. But if even that fails, it means that the state is invalid, as the robot cannot fit through it despite crouching.</p>
+          </li>
+        </ul>
+
+        <div style="text-align:center">
+  <img src="/images/z_demo.png" alt="z_demo" style="width:300;height:600;" />
+  </div>
+        <figcaption style="text-align: center;"><u><em>Fig-3 Traversing under a table: Planning in z-dimension</em></u></figcaption>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p><b>Results</b>
+  &lt;!– &lt;p&gt;We compared the results of planning time and other metrics between the variations of A* in our implementation.&lt;/p&gt;</p>
+
+    <div style="text-align:center">
+  <img src="/images/planning_times.png" alt="planning_times" style="width:500px;height:100px;" />
+  </div>
+    <figcaption style="text-align: center;"><u><em>Table-1 Comparison of the different approaches</em></u></figcaption>
+    <p>–&gt;</p>
+
+    <p>Our planner achieved a success rate of 95% in the test environment, proving its effectiveness.</p>
+  </li>
+</ul>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+
+
+      </footer>
+
+      
+
+      
+
+
+  <nav class="pagination">
+    
+      <a href="#" class="pagination--pager disabled">Previous</a>
+    
+    
+      <a href="https://SahilTChaudhary.github.io/blogjekyll/portfolio/2_pinbot/" class="pagination--pager" title="PinBot – Reinforcement Learning on a Pinball Machine
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+<a href="/sitemap/">Sitemap</a>
+<!-- end custom footer snippets -->
+
+        
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+      <li><a href="http://github.com/SahilTChaudhary"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    <li><a href="https://SahilTChaudhary.github.io/blogjekyll/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2025 Sahil T Chaudhary. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <script src="https://SahilTChaudhary.github.io/blogjekyll/assets/js/main.min.js"></script>
+
+
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+
+
+  </body>
+</html>
+

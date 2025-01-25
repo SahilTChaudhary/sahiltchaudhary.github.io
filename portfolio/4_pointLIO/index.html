@@ -1,0 +1,443 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+
+<meta charset="utf-8">
+
+
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Point-LiDAR Inertial Odometry - Sahil T Chaudhary</title>
+
+
+
+
+
+
+
+<meta property="og:locale" content="en-US">
+<meta property="og:site_name" content="Sahil T Chaudhary">
+<meta property="og:title" content="Point-LiDAR Inertial Odometry">
+
+
+  <link rel="canonical" href="https://SahilTChaudhary.github.io/blogjekyll/portfolio/4_pointLIO/">
+  <meta property="og:url" content="https://SahilTChaudhary.github.io/blogjekyll/portfolio/4_pointLIO/">
+
+
+
+  <meta property="og:description" content="Implemented Point-LIO from scratch to overcome the drawbacks of scan-based LiDAR processing.">
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Sahil T Chaudhary",
+      "url" : "https://SahilTChaudhary.github.io/blogjekyll",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="https://SahilTChaudhary.github.io/blogjekyll/feed.xml" type="application/atom+xml" rel="alternate" title="Sahil T Chaudhary Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://SahilTChaudhary.github.io/blogjekyll/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+    
+
+<!-- start custom head snippets -->
+
+<link rel="apple-touch-icon" sizes="57x57" href="https://SahilTChaudhary.github.io/blogjekyll/images/apple-touch-icon-57x57.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="60x60" href="https://SahilTChaudhary.github.io/blogjekyll/images/apple-touch-icon-60x60.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="72x72" href="https://SahilTChaudhary.github.io/blogjekyll/images/apple-touch-icon-72x72.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="76x76" href="https://SahilTChaudhary.github.io/blogjekyll/images/apple-touch-icon-76x76.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="114x114" href="https://SahilTChaudhary.github.io/blogjekyll/images/apple-touch-icon-114x114.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="120x120" href="https://SahilTChaudhary.github.io/blogjekyll/images/apple-touch-icon-120x120.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="144x144" href="https://SahilTChaudhary.github.io/blogjekyll/images/apple-touch-icon-144x144.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="152x152" href="https://SahilTChaudhary.github.io/blogjekyll/images/apple-touch-icon-152x152.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="180x180" href="https://SahilTChaudhary.github.io/blogjekyll/images/apple-touch-icon-180x180.png?v=M44lzPylqQ">
+<link rel="icon" type="image/png" href="https://SahilTChaudhary.github.io/blogjekyll/images/favicon-32x32.png?v=M44lzPylqQ" sizes="32x32">
+<link rel="icon" type="image/png" href="https://SahilTChaudhary.github.io/blogjekyll/images/android-chrome-192x192.png?v=M44lzPylqQ" sizes="192x192">
+<link rel="icon" type="image/png" href="https://SahilTChaudhary.github.io/blogjekyll/images/favicon-96x96.png?v=M44lzPylqQ" sizes="96x96">
+<link rel="icon" type="image/png" href="https://SahilTChaudhary.github.io/blogjekyll/images/favicon-16x16.png?v=M44lzPylqQ" sizes="16x16">
+<link rel="manifest" href="https://SahilTChaudhary.github.io/blogjekyll/images/manifest.json?v=M44lzPylqQ">
+<link rel="mask-icon" href="https://SahilTChaudhary.github.io/blogjekyll/images/safari-pinned-tab.svg?v=M44lzPylqQ" color="#000000">
+<link rel="shortcut icon" href="/images/favicon.ico?v=M44lzPylqQ">
+<meta name="msapplication-TileColor" content="#000000">
+<meta name="msapplication-TileImage" content="https://SahilTChaudhary.github.io/blogjekyll/images/mstile-144x144.png?v=M44lzPylqQ">
+<meta name="msapplication-config" content="https://SahilTChaudhary.github.io/blogjekyll/images/browserconfig.xml?v=M44lzPylqQ">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="https://SahilTChaudhary.github.io/blogjekyll/assets/css/academicons.css"/>
+
+<script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="https://SahilTChaudhary.github.io/blogjekyll/">Sahil T Chaudhary</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://SahilTChaudhary.github.io/blogjekyll/education/">Education</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://SahilTChaudhary.github.io/blogjekyll/industryexperience/">Work Experience</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://SahilTChaudhary.github.io/blogjekyll/research/">Research</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://SahilTChaudhary.github.io/blogjekyll/portfolio/">Projects</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <div class="sidebar sticky">
+  
+
+
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  <div class="author__avatar">
+    
+    	<img src="https://SahilTChaudhary.github.io/blogjekyll/images/profile.png" class="author__avatar" alt="Sahil T Chaudhary">
+    
+  </div>
+
+  <div class="author__content">
+    <h3 class="author__name">Sahil T Chaudhary</h3>
+    <p class="author__bio">I am a passionate Robotics Engineer looking to leave a mark</p>
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> Pittsburgh, PA</li>
+      
+      
+      
+      
+        <li><a href="mailto:sahilchaudhary.sc36@gmail.com"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> Email</a></li>
+      
+      
+       
+      
+      
+      
+      
+        <li><a href="https://www.linkedin.com/in/sahiltc/"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+      
+      
+      
+      
+      
+      
+        <li><a href="https://github.com/SahilTChaudhary"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Point-LiDAR Inertial Odometry">
+    <meta itemprop="description" content="Implemented Point-LIO from scratch to overcome the drawbacks of scan-based LiDAR processing.">
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Point-LiDAR Inertial Odometry
+</h1>
+          
+        
+        
+        
+        
+             
+        
+    
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        <p><a href="https://github.com/taylorpool/point_lio">[GitHub]</a><a href="http://sahiltchaudhary.github.io/files/Point_LIO_Final.pdf">[Report]</a></p>
+
+<p><i>February 2024 - April 2024</i></p>
+
+<ul>
+  <li><b>Tech Stack:</b> C++, ROS, Git, GTSAM</li>
+  <li><b> Summary </b>
+    <ul>
+      <li>
+        <p style="text-align: justify;">Implemented the Point-LIO algorithm using C++ and GTSAM, addressing the limitations of scan-based LiDAR processing.</p>
+      </li>
+      <li>
+        <p style="text-align: justify;">Modeled IMU saturation as part of the state vector within an Extended Kalman Filter (EKF) framework, improving state estimation during aggressive maneuvers.</p>
+      </li>
+      <li>
+        <p style="text-align: justify;">Handled time synchronization between LiDAR and IMU data by using separate buffers and timestamped LiDAR points, identifying challenges in implementation.</p>
+      </li>
+      <li>
+        <p style="text-align: justify;">My role: Implemented the EKF.</p>
+      </li>
+    </ul>
+  </li>
+  <li><b>In-Depth</b>
+    <ul>
+      <li>
+        <p style="text-align: justify;"><b>Introduction</b><br />This project was completed as part of the Robot Localization and Mapping (16-833) course at CMU. This project presents Point-LIO, a novel filtering based approach to LiDAR-Inertial Odometry. The algorithm treats inputs from Inertial Measurement Units (IMUs) and LiDAR sensors as proper measurement updates within an Extended Kalman Filter (EKF) framework. Our objective was to evaluate the performance of the Point-LIO system on data collected on ground vehicles navigating through long, narrow corridors. Given the necessity for real-time processing, we implemented the algorithm in C++.</p>
+      </li>
+    </ul>
+
+    <div style="text-align:center">
+  <img src="/images/point_lio_cover.png" alt="point_lio_cover" style="width:600px;height:300px;" />
+  </div>
+    <figcaption style="text-align: center;"><u><em>Fig-1 Taken from the Point LIO paper</em></u></figcaption>
+
+    <ul>
+      <li>
+        <p style="text-align: justify;"><b>Motivation</b><br />LiDAR is a sensor that samples at discrete points in time and returns the range and azimuth associated with the points in question. However, a common practice is to accumulate these points into a scan. Even though this aggregation aids in data processing, it introduces motion distortion, specifically when the LiDAR is in motion at high speeds. This distortion can compromise the accuracy of spatial measurements and pose challenges for navigation and mapping tasks. In addition to increasing lag, the low frame rate restricts the available bandwidth.</p>
+
+        <ul>
+          <li>
+            <p>We take inspiration from Point-LIO, a framework that entirely circumvents the motion distortion problem because it processes each LiDAR point sequentially on its own. This sequential processing of points also enables an odometry rate in the range of kHz, whereas, in traditional scan-based methods, it is typically 10 Hz. This enables the LiDAR odometry rate to be even faster than the IMU odometry rate, which is around 100 Hz.</p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p style="text-align: justify;"><b>Methodology</b><br />This section gives a brief overview of the algorithm and approach used.</p>
+
+        <ul>
+          <li>
+            <p style="text-align: justify;"><b>Point-based LiDAR processing</b><br />Our methodology involves the use of point-wise processing of LiDAR points by checking the plane correspondence of the given LiDAR point with its five nearest neighbors, as part of the measurement model. If the point does not lie in the plane, we add it to the map by assuming that it is a new point. This essentially encompasses the addition of new information to the map. If it lies in the plane, measurement update proceeds without any changes to the map. In order to enable fast insertion of points to the map as well as fast querying of the five nearest neighbors for the plane correspondence, we represent the points of the point cloud map using a variation of the KD-Tree known as the incremental KD-Tree. This tailored approach contributes to the robustness and overall effectiveness of our methodology.</p>
+          </li>
+          <li>
+            <p style="text-align: justify;"><b>Addressing IMU Saturation</b><br />Another significant issue that arises is that IMUs can become saturated in aggressive and fast motions, as the robot's angular velocity and linear acceleration might exceed the IMU's measuring range. This can yield the IMU to be useless during those time-steps. In order to overcome this, we use a stochastic process-augmented kinematic model, in which the IMU measurements, which are angular velocity and linear acceleration, are modeled as outputs of the system. This means that they are part of the state vector and are used in the update stage. Doing this enables us to estimate the angular velocity and linear acceleration as part of the state, and then correct the estimate using a filtering approach such as the Extended Kalman Filter (EKF) or the Unscented Kalman Filter (UKF). If during a certain maneuver or time-step the actual IMU reading becomes saturated, we just skip the measurements from those saturated channels, and use the current estimate of the angular velocity and linear acceleration from the propagate model during that time. This ensures that the system is more robust during aggressive and fast motion, as the system can continue to operate effectively and maintain functionality even when the IMU measurements are saturated. Thus, overall reliability and performance is enhanced.</p>
+          </li>
+        </ul>
+
+        <div style="text-align:center">
+  <img src="/images/point_lio_algo.png" alt="pointLIO_algorithm" style="width:500;height:600px;" />
+  </div>
+        <figcaption style="text-align: center;"><u><em>Fig-2 Point-LIO algorithm (taken from the Point-LIO paper)</em></u></figcaption>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p style="text-align: justify;"><b>Challenges</b><br />The major challenge was achieving the time syncing between LiDAR and IMU data. Unfortunately, due to the fact that LIDAR measurements arrive in a packet of 30,000 points every tenth of a second, their distribution across any given time window is non-uniform. The result is that we can no longer assume that all LIDAR measurements have been received prior to a given IMU measurement. And vice versa. We decided to overcome this issue by allocating individual buffers for both IMU and LIDAR points. When a IMU measurement was received, we processed all LIDAR points before the IMU measurement. Similarly, when a LIDAR point was received, we processed all IMU measurements prior to the time stamp associated with the LIDAR point. Unfortunately, this still resulted in negative time differences between the current state of the filter, and the time stamp associated with the current measurement being processed.</p>
+  </li>
+  <li><b>Results</b>
+    <p>The result for IMU dead reckoning is shown in the figure below.</p>
+
+    <div style="text-align:center">
+  <img src="/images/pointlio_traj_plot.png" alt="pointLIO_traj_plot" style="width:600px;height:300px;" />
+  </div>
+    <figcaption style="text-align: center;"><u><em>Fig-3 Trajectory visualization</em></u></figcaption>
+
+    <p>&lt;!– &lt;div style="text-align:center"&gt;
+  <img src="/images/pointlio_traj_plot-2.png" alt="pointLIO_traj_plot-2" style="width:600px;height:300px;" />
+  &lt;/div&gt;</p>
+    <figcaption style="text-align: center;"><u><em>Fig-4 Trajectory and landmark visualization</em></u></figcaption>
+    <p>–&gt;</p>
+
+    <p>We have presented our findings implementing Point-LIO: an algorithm for LiDAR-Inertial Odometry that seeks to replace scan registration with point-by-point registration. We implemented our approach in C++ from scratch with a significant amount of effort dedicated towards mapping, processing LiDAR points, and also forming the Extended Kalman Filter on-manifold. We found that Point-LIO is unsuitable for real-time computation given the inherently sequential nature of the processing requirements. Furthermore, we found that the time synchronization between each individual LiDAR point and IMU measurement to be difficult to implement properly and wholly non-intuitive.</p>
+  </li>
+</ul>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+
+
+      </footer>
+
+      
+
+      
+
+
+  <nav class="pagination">
+    
+      <a href="https://SahilTChaudhary.github.io/blogjekyll/portfolio/3_mppi_/" class="pagination--pager" title="Model Predictive Path Integral Control
+">Previous</a>
+    
+    
+      <a href="https://SahilTChaudhary.github.io/blogjekyll/portfolio/5_cmuBuggy/" class="pagination--pager" title="CMU Buggy Sim
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+<a href="/sitemap/">Sitemap</a>
+<!-- end custom footer snippets -->
+
+        
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+      <li><a href="http://github.com/SahilTChaudhary"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    <li><a href="https://SahilTChaudhary.github.io/blogjekyll/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2025 Sahil T Chaudhary. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <script src="https://SahilTChaudhary.github.io/blogjekyll/assets/js/main.min.js"></script>
+
+
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+
+
+  </body>
+</html>
+

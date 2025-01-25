@@ -1,0 +1,463 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+
+<meta charset="utf-8">
+
+
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Model Predictive Path Integral Control - Sahil T Chaudhary</title>
+
+
+
+
+
+
+
+<meta property="og:locale" content="en-US">
+<meta property="og:site_name" content="Sahil T Chaudhary">
+<meta property="og:title" content="Model Predictive Path Integral Control">
+
+
+  <link rel="canonical" href="https://SahilTChaudhary.github.io/blogjekyll/portfolio/3_mppi_/">
+  <meta property="og:url" content="https://SahilTChaudhary.github.io/blogjekyll/portfolio/3_mppi_/">
+
+
+
+  <meta property="og:description" content="Implemented MPPI on an RC car platform using C++ and ROS to enable aggressive driving.">
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Sahil T Chaudhary",
+      "url" : "https://SahilTChaudhary.github.io/blogjekyll",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="https://SahilTChaudhary.github.io/blogjekyll/feed.xml" type="application/atom+xml" rel="alternate" title="Sahil T Chaudhary Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://SahilTChaudhary.github.io/blogjekyll/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+    
+
+<!-- start custom head snippets -->
+
+<link rel="apple-touch-icon" sizes="57x57" href="https://SahilTChaudhary.github.io/blogjekyll/images/apple-touch-icon-57x57.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="60x60" href="https://SahilTChaudhary.github.io/blogjekyll/images/apple-touch-icon-60x60.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="72x72" href="https://SahilTChaudhary.github.io/blogjekyll/images/apple-touch-icon-72x72.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="76x76" href="https://SahilTChaudhary.github.io/blogjekyll/images/apple-touch-icon-76x76.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="114x114" href="https://SahilTChaudhary.github.io/blogjekyll/images/apple-touch-icon-114x114.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="120x120" href="https://SahilTChaudhary.github.io/blogjekyll/images/apple-touch-icon-120x120.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="144x144" href="https://SahilTChaudhary.github.io/blogjekyll/images/apple-touch-icon-144x144.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="152x152" href="https://SahilTChaudhary.github.io/blogjekyll/images/apple-touch-icon-152x152.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="180x180" href="https://SahilTChaudhary.github.io/blogjekyll/images/apple-touch-icon-180x180.png?v=M44lzPylqQ">
+<link rel="icon" type="image/png" href="https://SahilTChaudhary.github.io/blogjekyll/images/favicon-32x32.png?v=M44lzPylqQ" sizes="32x32">
+<link rel="icon" type="image/png" href="https://SahilTChaudhary.github.io/blogjekyll/images/android-chrome-192x192.png?v=M44lzPylqQ" sizes="192x192">
+<link rel="icon" type="image/png" href="https://SahilTChaudhary.github.io/blogjekyll/images/favicon-96x96.png?v=M44lzPylqQ" sizes="96x96">
+<link rel="icon" type="image/png" href="https://SahilTChaudhary.github.io/blogjekyll/images/favicon-16x16.png?v=M44lzPylqQ" sizes="16x16">
+<link rel="manifest" href="https://SahilTChaudhary.github.io/blogjekyll/images/manifest.json?v=M44lzPylqQ">
+<link rel="mask-icon" href="https://SahilTChaudhary.github.io/blogjekyll/images/safari-pinned-tab.svg?v=M44lzPylqQ" color="#000000">
+<link rel="shortcut icon" href="/images/favicon.ico?v=M44lzPylqQ">
+<meta name="msapplication-TileColor" content="#000000">
+<meta name="msapplication-TileImage" content="https://SahilTChaudhary.github.io/blogjekyll/images/mstile-144x144.png?v=M44lzPylqQ">
+<meta name="msapplication-config" content="https://SahilTChaudhary.github.io/blogjekyll/images/browserconfig.xml?v=M44lzPylqQ">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="https://SahilTChaudhary.github.io/blogjekyll/assets/css/academicons.css"/>
+
+<script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="https://SahilTChaudhary.github.io/blogjekyll/">Sahil T Chaudhary</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://SahilTChaudhary.github.io/blogjekyll/education/">Education</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://SahilTChaudhary.github.io/blogjekyll/industryexperience/">Work Experience</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://SahilTChaudhary.github.io/blogjekyll/research/">Research</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://SahilTChaudhary.github.io/blogjekyll/portfolio/">Projects</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <div class="sidebar sticky">
+  
+
+
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  <div class="author__avatar">
+    
+    	<img src="https://SahilTChaudhary.github.io/blogjekyll/images/profile.png" class="author__avatar" alt="Sahil T Chaudhary">
+    
+  </div>
+
+  <div class="author__content">
+    <h3 class="author__name">Sahil T Chaudhary</h3>
+    <p class="author__bio">I am a passionate Robotics Engineer looking to leave a mark</p>
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> Pittsburgh, PA</li>
+      
+      
+      
+      
+        <li><a href="mailto:sahilchaudhary.sc36@gmail.com"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> Email</a></li>
+      
+      
+       
+      
+      
+      
+      
+        <li><a href="https://www.linkedin.com/in/sahiltc/"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+      
+      
+      
+      
+      
+      
+        <li><a href="https://github.com/SahilTChaudhary"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Model Predictive Path Integral Control">
+    <meta itemprop="description" content="Implemented MPPI on an RC car platform using C++ and ROS to enable aggressive driving.">
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Model Predictive Path Integral Control
+</h1>
+          
+        
+        
+        
+        
+             
+        
+    
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        <p><a href="https://github.com/dpmick/ocrl_mppi">[GitHub]</a><a href="http://sahiltchaudhary.github.io/files/OCRL_Final_Project.pdf">[Report]</a></p>
+
+<p><i>February 2024 - April 2024</i></p>
+
+<ul>
+  <li><b>Tech Stack:</b> C++, ROS, Git</li>
+  <li><b> Summary </b>
+    <ul>
+      <li>
+        <p style="text-align: justify;">Implemented MPPI on an RC car platform using C++ and ROS to enable aggressive driving.</p>
+      </li>
+      <li>
+        <p style="text-align: justify;">Accomplished obstacle avoidance by utilizing a Costmap generated by a Voxel Grid.</p>
+      </li>
+      <li>
+        <p style="text-align: justify;">Benchmarked MPPI against an existing iLQR controller, demonstrating faster path generation of up to 20% with MPPI.</p>
+      </li>
+      <li>
+        <p style="text-align: justify;">My role: Helped implement MPPI, integrated the Costmap, and integrated with the rest of the software stack.</p>
+      </li>
+    </ul>
+  </li>
+  <li><b>In-Depth</b>
+    <ul>
+      <li>
+        <p style="text-align: justify;"><b>Introduction</b><br />This project was completed as part of the Optimal Control and Reinforcement Learning (16-745) course at CMU. The aim of this project was to implement a Model Predictive Path Integral (MPPI) control algorithm for an RC car platform, and compare its performance with an existing Iterative Linear Quadratic Regulator (iLQR) controller. Traditional approaches like iLQR involve decoupling the planner and the controller. However, MPPI couples both of them, eliminating the need for a separate planner. The iLQR implementation uses the FALCO planner, which uses a fixed set of pre-generated paths that are computed offline. In contrast, our MPPI implementation randomly samples control sequences and rolls them out, which can lead to paths that could not have been achieved by the FALCO planner. This enables the MPPI to attain more aggressive paths. Our implemented MPPI controller outperforms our system's current iLQR/FALCO control/planning stack by generating faster paths.</p>
+      </li>
+    </ul>
+
+    <div style="text-align:center">
+  <img src="/images/mppi_car.png" alt="rc_car" style="width:500;height:300px;" />
+  </div>
+    <figcaption style="text-align: center;"><u><em>Fig-1 Project RC Car</em></u></figcaption>
+
+    <ul>
+      <li>
+        <p style="text-align: justify;"><b>Motivation</b><br />In more recent years, the focus on aggressive off-road autonomy has increased. Programs like DARPA Racer have accelerated academic research in this domain. In doing so, some traditional planning and control methods hit their limits due to challenging new terrain. As such, new methods have been derived to increase the speed and versatility of off-road autonomy systems. To this end, Model Predictive Path Integral (MPPI) control was introduced to fuse the planning and control steps. Our team thought this would be very interesting to study because it was related to the ongoing projects in our lab. We had a multi-robot system of RC cars that we drove to explore tunnels for military and search and rescue applications. Each car was controlled with an iLQR controller with the FALCO local planner running on the vehicles. That system was functional, but we were interested in running MPPI on our system to see how it compared to the current autonomy stack. As such, in this work, we developed MPPI for a simulated RC Car, and compared it to an iLQR and FALCO planning stack.</p>
+
+        <ul>
+          <li>
+            <p style="text-align: justify;"><b>MPPI vs iLQR/FALCO</b><br />This section will give a brief comparison of iLQR/FALCO and our MPPI implementation.</p>
+          </li>
+          <li>
+            <p style="text-align: justify;"><b>iLQR/FALCO</b><br />Our FALCO implementation uses the Kinematic Bicycle Model above to build a parameterized set of possible paths offline. Paths are parameterized by speed. So, in the planning step, using the estimated robot speed, a set of paths is rolled out in "front" of the current estimated position of the robot. Assuming deterministic knowledge of obstacles, paths that intersect obstacles are removed. Finally, the path that minimizes distance to the goal is selected and used as the reference path. The generated paths and the selected path can be seen below in Fig-2, where the generated paths are red and the selected path is green. iLQR is used to control the car to the reference path. This allows for optimal control to the paths generated by the nonlinear KBM. Additionally, this supports inequality constraints on steering and velocity inputs in our system. At the rate of the system update, the system will receive a new path from the FALCO planner, and rerun the iLQR controller.</p>
+          </li>
+        </ul>
+
+        <div style="text-align:center">
+  <img src="/images/falco_paths.png" alt="falco_paths" style="width:250;height:500;" />
+  </div>
+        <figcaption style="text-align: center;"><u><em>Fig-2 Visualization of pre-generated reference paths (red) and FALCO selected path (green)</em></u></figcaption>
+
+        <ul>
+          <li>
+            <p style="text-align: justify;"><b>MPPI</b><br />Rather than including a planning and control step, MPPI combines these steps. MPPI does this by rolling out a sequence of paths. To roll out one path, MPPI samples a sequence of control inputs over the steps. Then, using a predefined cost function, the cost of each rollout is calculated. This process occurs for N number of rollouts. Then, the final control sent to the system is calculated using the weighted average of all control inputs, where the weight is based directly on the cost of the path. Some advantages of MPPI include:</p>
+            <ul>
+              <li>Combines the planner and controller into a single entity, hence simplifying the pipeline.</li>
+              <li>Possible to use highly non-convex cost functions and non-linear dynamics, as no optimization is involved. As a result more complicated dynamics models like Dynamic Bicycle Model can easily be implemented.</li>
+              <li>Can achieve more aggressive and varied paths due to its sampling nature, whereas FALCO is limited to its set of pre-generated paths.</li>
+            </ul>
+          </li>
+        </ul>
+
+        <div style="text-align:center">
+  <img src="/images/mppi_paths.png" alt="mppi_paths" style="width:250;height:500;" />
+  </div>
+        <figcaption style="text-align: center;"><u><em>Fig-3 Visualization of sample-based roll outs (red) and ultimate MPPI-executed path (green)</em></u></figcaption>
+      </li>
+    </ul>
+  </li>
+  <li><b>Results</b>
+    <p>We compared the results of waypoint following between iLQR and MPPI. We set 8 waypoints at different combinations of $x$ and $y$ positions. We tracked the distance from the final position of the car to the goal (Table-1). Additionally, we tracked the time it takes for the car to get to the goal position between the methods (Table-2).</p>
+
+    <div style="text-align:center">
+  <img src="/images/mppi_results_tab1.png" alt="Results_tab1" style="width:600px;height:300px;" />
+  </div>
+    <figcaption style="text-align: center;"><u><em>Table-1 Comparison of final position errors</em></u></figcaption>
+
+    <div style="text-align:center">
+  <img src="/images/mppi_results_tab2.png" alt="Results_tab2" style="width:600px;height:300px;" />
+  </div>
+    <figcaption style="text-align: center;"><u><em>Table-2 Comparison of time taken to waypoint</em></u></figcaption>
+
+    <p>Overall, our results indicate that the final error of  MPPI is lower. Where the average final error over all of the runs is 0.33m, and the average final error for iLQR is 1.47m. On average, iLQR took a bit longer, with an average of 20.67 seconds to completion while the time for MPPI was only 16.81 seconds. Over the course of one path, we compare the path taken by the car (Fig-4). We also compare the controlled velocity output (Fig-5) and the steering output (Fig-6).</p>
+
+    <div style="text-align:center">
+  <img src="/images/mppi_odom_plot.png" alt="odom_plot" style="width:600px;height:300px;" />
+  </div>
+    <figcaption style="text-align: center;"><u><em>Fig-4 Path comparison of MPPI and iLQR</em></u></figcaption>
+
+    <div style="text-align:center">
+  <img src="/images/mppi_vel_plot.png" alt="vel_plot" style="width:600px;height:300px;" />
+  </div>
+    <figcaption style="text-align: center;"><u><em>Fig-5 Velocity comparison of MPPI and iLQR</em></u></figcaption>
+
+    <div style="text-align:center">
+  <img src="/images/mppi_steer_plot.png" alt="steer_plot" style="width:600px;height:300px;" />
+  </div>
+    <figcaption style="text-align: center;"><u><em>Fig-6 Steering angle comparison of MPPI and iLQR</em></u></figcaption>
+
+    <p>Our experiments demonstrate that MPPI has a lesser final error and faster speed when compared to the iLQR. This is because MPPI is able to generate more direct and straight paths to the goal waypoint as compared to iLQR and FALCO, by virtue of sampling controls randomly and generating new and unique paths in real time.</p>
+  </li>
+</ul>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+
+
+      </footer>
+
+      
+
+      
+
+
+  <nav class="pagination">
+    
+      <a href="https://SahilTChaudhary.github.io/blogjekyll/portfolio/2_pinbot/" class="pagination--pager" title="PinBot – Reinforcement Learning on a Pinball Machine
+">Previous</a>
+    
+    
+      <a href="https://SahilTChaudhary.github.io/blogjekyll/portfolio/4_pointLIO/" class="pagination--pager" title="Point-LiDAR Inertial Odometry
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+<a href="/sitemap/">Sitemap</a>
+<!-- end custom footer snippets -->
+
+        
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+      <li><a href="http://github.com/SahilTChaudhary"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    <li><a href="https://SahilTChaudhary.github.io/blogjekyll/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2025 Sahil T Chaudhary. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <script src="https://SahilTChaudhary.github.io/blogjekyll/assets/js/main.min.js"></script>
+
+
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+
+
+  </body>
+</html>
+
