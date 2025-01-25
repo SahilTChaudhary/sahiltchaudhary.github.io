@@ -50,11 +50,4 @@ collection: portfolio
         <figcaption style="text-align: center;"><u><em>Fig-3 Traversing under a table: Planning in z-dimension</em></u></figcaption>
 
 * <b>Results</b>
-    <!-- <p>We compared the results of planning time and other metrics between the variations of A* in our implementation.</p>
-
-    <div style="text-align:center">
-    <img src="/images/planning_times.png" alt="planning_times" style="width:500px;height:100px;">
-    </div>
-    <figcaption style="text-align: center;"><u><em>Table-1 Comparison of the different approaches</em></u></figcaption> -->
-
     <p>Our planner achieved a success rate of 95% in the test environment, proving its effectiveness.</p>

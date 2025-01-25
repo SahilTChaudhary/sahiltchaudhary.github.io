@@ -50,9 +50,4 @@ collection: portfolio
     </div>
     <figcaption style="text-align: center;"><u><em>Fig-3 Trajectory visualization</em></u></figcaption>
 
-    <!-- <div style="text-align:center">
-    <img src="/images/pointlio_traj_plot-2.png" alt="pointLIO_traj_plot-2" style="width:600px;height:300px;">
-    </div>
-    <figcaption style="text-align: center;"><u><em>Fig-4 Trajectory and landmark visualization</em></u></figcaption> -->
-
     <p>We have presented our findings implementing Point-LIO: an algorithm for LiDAR-Inertial Odometry that seeks to replace scan registration with point-by-point registration. We implemented our approach in C++ from scratch with a significant amount of effort dedicated towards mapping, processing LiDAR points, and also forming the Extended Kalman Filter on-manifold. We found that Point-LIO is unsuitable for real-time computation given the inherently sequential nature of the processing requirements. Furthermore, we found that the time synchronization between each individual LiDAR point and IMU measurement to be difficult to implement properly and wholly non-intuitive.</p>
