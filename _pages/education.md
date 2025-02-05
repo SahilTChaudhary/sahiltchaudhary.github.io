@@ -14,7 +14,7 @@ redirect_from:
 
   *  <b>GPA:</b> 4.0/4.0
   *  <b>Relevant Course Work:</b> Planning and Decision-making in Robotics (16-782), Introduction to Robot Learning (16-831), Optimal Control and Reinforcement Learning (16-745), Robot Localization and Mapping (16-833), Modern Control Theory (24-677), Robot Dynamics and Analysis (24-760), Machine Learning and Artificial Intelligence for Engineers (24-787), Computer Vision for Engineers (24-678)
-  * <b>Scholarship:</bs> Fully funded Master's student
+  * <b>Scholarship:</b> Fully funded Master's student
 
 
 
@@ -23,4 +23,3 @@ redirect_from:
 <i>Bachelor of Technology in Mechanical Engineering</i>
 
   *  <b>GPA:</b> 9.05/10.0
-  *  <b>Relevant Course Work:</b> Robotics, CAD/CAM, Design of Machine Elements

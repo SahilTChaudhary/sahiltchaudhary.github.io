@@ -14,8 +14,8 @@ collection: portfolio
 * <b> Summary </b>
     -  <p style="text-align: justify;">Demonstrated a global path planner for a quadruped robot using C++ and ROS, that accounts for dynamic obstacles and the z-height of the robot.</p>
     -  <p style="text-align: justify;">Executed a Lazy-PRM with D* Lite planner with kinodynamic constraints and state space comprising x, y, z, yaw, and velocity components.</p>
-    -  <p style="text-align: justify;">Achieved a success rate of 95%.</p>
-    -  <p style="text-align: justify;">My role: Implemented the z-height controller, and helped implement PRM-D* Lite.</p>
+    -  <p style="text-align: justify;">Achieved a success rate of 93%.</p>
+    -  <p style="text-align: justify;">My role: Implemented the z-height controller, and helped implement Lazy PRM-D* Lite.</p>
 
 * <b>In-Depth</b>
     *  <p style="text-align: justify;"><b>Introduction</b><br>This project was completed as part of the Planning and Decision-making in Robotics (16-782) course at CMU. The aim of this project was to implement a Lazy PRM-D* Lite global path planner. Experimental validation showed that our planner achieved a 95% success rate.</p>
@@ -50,4 +50,4 @@ collection: portfolio
         <figcaption style="text-align: center;"><u><em>Fig-3 Traversing under a table: Planning in z-dimension</em></u></figcaption>
 
 * <b>Results</b>
-    <p>Our planner achieved a success rate of 95% in the test environment, proving its effectiveness.</p>
+    <p>Our planner achieved a success rate of 93% in the test environment, proving its effectiveness.</p>

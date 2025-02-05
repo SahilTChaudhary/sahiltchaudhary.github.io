@@ -8,13 +8,13 @@ collection: portfolio
 
 [[GitHub]](https://github.com/RichaaM/Pinbot)[[Report]](http://sahiltchaudhary.github.io/files/IRL_Final_Project_Report.pdf)
 
-<i>September 2024 - November 2024</i>
+<i>September 2024 - Present</i>
 
 * <b>Tech Stack:</b> Python, PyTorch, Unity, Git
 * <b> Summary </b>
     -  <p style="text-align: justify;">Developed a reinforcement learning agent using Proximal Policy Optimization (PPO) to play the pinball game Total Nuclear Annihilation.</p>
     -  <p style="text-align: justify;">Trained the agent in a simulated environment using the Unity ML-Agents framework, achieving performance comparable to an amateur human player in 10k epochs.</p>
-    -  <p style="text-align: justify;">Applied transfer learning to adapt the agent for a physical pinball machine (ongoing work).</p>
+    -  <p style="text-align: justify;">Applying transfer learning to adapt the agent for a physical pinball machine (ongoing work).</p>
     -  <p style="text-align: justify;">My role: Helped setup the simulation framework, and also worked on implementing PPO.</p>
 
 * <b>In-Depth</b>
