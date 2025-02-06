@@ -24,7 +24,7 @@ I am Sahil Chaudhary, a **Master of Science in Mechanical Engineering graduate f
 
 * As a **Graduate Research Assistant in the Biorobotics Lab at CMU**, I am working on developing algorithms and features for **Multi-Agent Planning and Controls for a heterogenous system of robots, along with Comms-Aware Planning**.
 
-  *	Spearheaded the development of a **MANET framework** using DDS and ROS, that **ensures communication fidelity in heterogeneous robot convoys**, along with network topology repairing and recovery behaviors.
+  *	Spearheaded the development of a **MANET framework** using DDS and ROS to **ensure communication fidelity in heterogeneous robot convoys**, implement network topology repair and recovery behaviors, and enforce a communication boundary.
   *	**Comms-Aware Planning:** Designed a novel algorithm attaining **99% success rate** to maintain communication fidelity over radio among robots in convoy, by formulating a **modified Max-Min Spanning Tree**, and validated the algorithm through extensive hardware testing.
   *	**Heterogeneous Convoy Framework:** Developed a **decentralized convoy framework** integrating RC cars and quadrupeds like Boston Dynamics’ Spot, and an algorithm enabling rendezvous at intersections and coordinated return as a convoy, as part of exploratory features.
   *	Enhanced the operational efficiency of the **Local Planner by up to 29%**, through **waypoint optimization and trajectory smoothing**, reducing unnecessary deceleration between waypoints and improving overall robot speed and motion continuity.
