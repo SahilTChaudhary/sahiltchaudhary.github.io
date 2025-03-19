@@ -23,9 +23,9 @@ redirect_from:
     In this project, the bulk of my work and contributions are as follows:
 
   * <h3>Comms-Aware Planning and MANET framework</h3>
-    * Spearheaded the development of a **MANET framework** using DDS and ROS to ensure communication fidelity in heterogeneous robot convoys, implement network topology repair and recovery behaviors, and enforce a communication boundary. The various features and behaviors of this framework are as follows:
+    * Spearheaded the development of a **MANET framework** using DDS and ROS to ensure communication fidelity in heterogeneous robot convoys, perform network topology repair and recovery behaviors, and enforce a communication boundary. Submitted a [paper](https://sahiltchaudhary.github.io/publications/comms/) to GVSETS 2025. The various features and behaviors of this framework are as follows:
 
-    * <h3>Comms Graph and Comms Peeloff</h3>
+    * <h3>Network Construction and Comms Peeloff</h3>
       * Developed a **novel algorithm to maintain communication fidelity among robots** in a convoy, by extending off an existing work.
         * The aim is to ensure that all robots in the field, irrespective of whether they are in a convoy or not, must be able to communicate with the Basestation, i.e., the user.
         * Each robot communicates via proprietary radios, and each radio has the capability to act as a **comms relay**.
@@ -48,13 +48,18 @@ redirect_from:
       <img src="/images/maxmin_tree.png" alt="maxmintree" style="width:800px;height:300px;">
       </div>
       <figcaption style="text-align: center;"><u><em>Max-Min Tree generation from Graph</em></u></figcaption>
+
+      <div style="text-align:center">
+      <video src="/images/Comms_Peeloff.mp4" controls="commsPeeloff" style="max-width: 750px;"></video>
+      </div>
+      <figcaption style="text-align: center;"><u><em>Comms Peel Off hardware demonstration</em></u></figcaption>
     
       <div style="text-align:center">
-      <video src="/images/Multi_convoy_comms_peeloff.mp4" controls="controls" style="max-width: 750px;"></video>
+      <video src="/images/Multi_convoy_comms_peeloff.mp4" controls="commsPeeloff_sim" style="max-width: 750px;"></video>
       </div>
       <figcaption style="text-align: center;"><u><em>Multi-Convoy Comms-Peeloff demonstration in simulation</em></u></figcaption>
     
-    * <h3>Comms Recovery</h3>
+    * <h3>Communication Recovery</h3>
       * This behavior handles scenarios wherein robots go out of comms. It is a fully **decentralized** algorithm that sequentially explores all known locations where Central Nodes existed or exist, till comms is regained.
       * Uses a **Global Planner** based on A* to find paths.
       * Guarantees comms recovery as long as there is a path, as the robot will keep exploring till it reaches the Basestation.
@@ -62,14 +67,20 @@ redirect_from:
       <div style="text-align:center">
       <img src="/images/CommsRecovery.png" alt="CommsRecovery" style="width:800px;height:300px;">
       </div>
-      <figcaption style="text-align: center;"><u><em>Comms Recovery algorithm</em></u></figcaption>
+      <figcaption style="text-align: center;"><u><em>Communication Recovery algorithm</em></u></figcaption>
 
-      <div style="text-align:center">
+      <!-- <div style="text-align:center">
       <video src="/images/BackToComms_demo_sim.mp4" controls="commsRecovery" style="max-width: 750px;"></video>
       </div>
-      <figcaption style="text-align: center;"><u><em>Back-To-Comms behavior for Comms Recovery</em></u></figcaption>
+      <figcaption style="text-align: center;"><u><em>Back-To-Comms behavior for Comms Recovery</em></u></figcaption> -->
 
-    * <h3>Comms Boundary</h3>
+      <div style="text-align:center">
+      <video src="/images/Comms_Recovery_final.mp4" controls="commsRecovery" style="max-width: 750px;"></video>
+      </div>
+      <figcaption style="text-align: center;"><u><em>Communication Recovery hardware demonstration</em></u></figcaption>
+
+
+    * <h3>Communication Boundary</h3>
       * This feature acts like an invisible wall at the perimeter of the network topology. It prevents any robot from crossing that boundary, effectively ensuring that it stays within comms.
       * The boundary itself varies for each robot, based on the network topology and nearest Central Node.
 
@@ -78,7 +89,7 @@ redirect_from:
       </div>
       <figcaption style="text-align: center;"><u><em>Enforcing the Comms Boundary</em></u></figcaption>
 
-    * <h3>Comms Topology Optimization based on an Inverse Kinematics approach</h3>
+    * <h3>Network Topology Optimization based on an Inverse Kinematics approach</h3>
       * The Central Nodes and the signal strengths between them are modeled as links of a **serial manipulator**.
       * Given a desired location for a robot, an **optimization problem** is solved for the locations of the Central Nodes. This enables the Central Nodes to **dynamically adapt the comms topology** based on need.
 
@@ -88,7 +99,7 @@ redirect_from:
       * The **Heterogeneous Convoy** framework incorporates RC cars and Quadruped robots such that the ordering, waypoints and leader-follower mechanisms do not slow the convoy down, as quadrupeds are significantly slower than the RC cars. Alternatively, there is an option to ensure that the quadruped stays with the convoy, resulting in the convoy slowing down significantly.
     
       <div style="text-align:center">
-      <video src="/images/hetero_convoy.mp4" controls="controls" style="max-width: 750px;"></video>
+      <video src="/images/hetero_convoy.mp4" controls="heteroConvoy" style="max-width: 750px;"></video>
       </div>
       <figcaption style="text-align: center;"><u><em>Heterogeneous Convoy demonstration</em></u></figcaption>
 
@@ -96,7 +107,7 @@ redirect_from:
       * The algorithm finds the nearest common intersection (individually on each robot to ensure a **decentralized algorithm**) for all robots in a convoy based off of Backtracking waypoints, and then enables the robots to then move to a desired location as a convoy. This feature is a part of the exploratory nature of the project.
     
       <div style="text-align:center">
-      <video src="/images/rendezvous.mp4" controls="controls" style="max-width: 750px;"></video>
+      <video src="/images/rendezvous.mp4" controls="rendev" style="max-width: 750px;"></video>
       </div>
       <figcaption style="text-align: center;"><u><em>Rendezvous feature demonstration</em></u></figcaption>
 
