@@ -13,7 +13,7 @@ collection: portfolio
 * <b>Tech Stack:</b> Python, PyTorch, Unity, Git
 * <b> Summary </b>
     -  <p style="text-align: justify;">Developed a reinforcement learning agent using Proximal Policy Optimization (PPO) to play the pinball game Total Nuclear Annihilation.</p>
-    -  <p style="text-align: justify;">Trained the agent in a simulated environment using the Unity ML-Agents framework, achieving performance comparable to an amateur human player in 10k epochs.</p>
+    -  <p style="text-align: justify;">Trained the agent in a simulated environment using the Gymnasium framework, outperforming a randomized baseline agent by 67%.</p>
     -  <p style="text-align: justify;">Applying transfer learning to adapt the agent for a physical pinball machine (ongoing work).</p>
     -  <p style="text-align: justify;">My role: Helped setup the simulation framework, and also worked on implementing PPO.</p>
 
@@ -53,18 +53,18 @@ collection: portfolio
     <p>After training for 90k steps, the model was evaluated against three baselines: a human player, a randomized agent, and no agent. 10 cases were run for each scenario, with aggregated results below.</p>
 
     <div style="text-align:center">
-    <img src="/images/training_results.png" alt="results" style="width:600px;height:150px;">
+    <img src="/images/training_results.png" alt="results" style="width:600px;height:130px;">
     </div>
     <figcaption style="text-align: center;"><u><em>Table-1 Performance of the trained agent compared against baselines</em></u></figcaption>
 
     <div style="text-align:center">
-    <img src="/images/cumrew_eplen.png" alt="cumrew_eplen" style="width:700px;height:300px;">
+    <img src="/images/pinbot_violin.png" alt="results_plot" style="width:600px;height:500;">
     </div>
-    <figcaption style="text-align: center;"><u><em>Fig-4 Cumulative Reward and Episode Length</em></u></figcaption>
+    <figcaption style="text-align: center;"><u><em>Fig-4 Violin plot of agent performance</em></u></figcaption>
 
     <div style="text-align:center">
-    <img src="/images/rl_losses.png" alt="losses" style="width:1000px;height:200px;">
+    <video src="/images/Pinbot_Gameplay_Demo.mp4" controls="pinbot_demo" style="width:400px;height:480;"></video>
     </div>
-    <figcaption style="text-align: center;"><u><em>Fig-5 Losses</em></u></figcaption>
+    <figcaption style="text-align: center;"><u><em>The AI in action - The agent had locked two balls, and was one shot away from getting a multi-ball</em></u></figcaption>
 
     <p>In this work, we developed a reinforcement learning model to play pinball in simulation, showing heightened performance to random actions, and near-comparable performance to a human player.</p>
