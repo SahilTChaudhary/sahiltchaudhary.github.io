@@ -16,7 +16,7 @@ I am Sahil Chaudhary, a **Master of Science in Mechanical Engineering graduate f
 
 <h2>My Skillset</h2>
   * <b>Programming Languages:</b> C++, Python, MATLAB, Julia
-  * <b>Tools and Software:</b> Gazebo, OpenMP, Matplotlib, PyTorch, NumPy, SKLearn, SolidWorks, Ansys, Fusion 360
+  * <b>Tools and Software:</b> Gazebo, Matplotlib, PyTorch, NumPy, SKLearn, SolidWorks, Ansys, Fusion 360
   * <b>Platforms:</b> ROS, Git, Linux, Docker
   * <b>Knowledge Areas:</b> Controls, Planning, SLAM, Robot Dynamics, Machine Learning, CAD, Mechanical Design, Rapid Prototyping 
 

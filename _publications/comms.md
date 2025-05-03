@@ -2,7 +2,7 @@
 title: "Communication Network Construction Behaviors for Robotic Convoying"
 collection: publications
 permalink: /publication/comms
-excerpt: 'This paper focuses on communications-aware behaviors that enable formations of robotic agents to travel through communications-deprived environments while remaining in contact with a central base station (under review).'
+excerpt: 'This paper focuses on communications-aware behaviors that enable formations of robotic agents to travel through communications-deprived environments while remaining in contact with a central base station (accepted).'
 # date: Under Review
 # venue: 'Ground Vehicle Systems Engineering and Technology Symposium (GVSETS) 2025'
 # paperurl: 'http://sahiltchaudhary.github.io/files/GVSETS25_CommsAwarePlanning.pdf'
