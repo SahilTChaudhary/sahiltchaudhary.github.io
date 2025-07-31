@@ -8,10 +8,38 @@ redirect_from:
 ---
 
 {% include base_path %}
-
 <figure>
   <img src="/images/robotics_institute.png" alt="RI Logo" style="width:200px;height:200px;">
-  </figure>
+</figure>
+
+<figure>
+  <img src="/images/sbpl_logo.png" alt="SBPL Logo" style="width:250px;height:100px;">
+</figure>
+* <h2>Search-Based Planning Lab, Pittsburgh, PA</h2>
+  <!-- <h3>Intern (May 2025 - Present)</h3> -->
+  * <b>Core Skills:</b> Isaac Lab, Reinforcement Learning, Python, Git, Linux
+  * <h3>Blind Manipulation</h3>
+    * The aim of this project is to enable **robotic manipulation in unknown environments using contact-based observations**. This work aims to bypass assumptions regarding the world model and representation by directly mapping contact observations to actions by using Reinforcement Learning.
+    * The project can be divided into the following subtasks:
+      * Train an RL policy to reach the goal in an unknown environment with obstacles and only contact sensors.
+      * Having reached the goal, train a policy for manipulating the target, e.g., inserting a peg in a hole, turning on a switch or valve etc. The goal is to train a 'meta-RL' policy to generalize across tasks.
+      * Combine the policies into one hierarchical system.
+    * My contribution is the entire **last-mile manipulation** policy, i.e., manipulating objects having reached their vicinity.
+    * Currently, I have setup individual tasks in Isaac Lab, and trained baseline policies for the same, achieving **94% success rate**.
+
+  <div style="text-align:center">
+  <video src="/images/peg_insertion.webm" controls="peg_in_hole" style="max-width: 500px;"></video>
+  </div>
+  <figcaption style="text-align: center;"><u><em>Policy trained for inserting a peg in a hole</em></u></figcaption>
+
+  <div style="text-align:center">
+  <video src="/images/switch_manipulation.webm" controls="switch_manipulation" style="max-width: 500px;"></video>
+  </div>
+  <figcaption style="text-align: center;"><u><em>Policy trained for turning on a switch</em></u></figcaption>
+
+<figure>
+  <img src="/images/biorobotics_logo.png" alt="Biorobotics Logo" style="width:200px;height:200px;">
+</figure>
 * <h2>Biorobotics Lab, Pittsburgh, PA</h2>
   <h3>Graduate Research Assistant (August 2023 - Present)</h3>
   * <b>Core Skills:</b> C++, Python, ROS, Git, Linux, Gazebo, SolidWorks
@@ -23,7 +51,7 @@ redirect_from:
     In this project, the bulk of my work and contributions are as follows:
 
   * <h3>Comms-Aware Planning and MANET framework</h3>
-    * Spearheaded the development of a **MANET framework** using DDS and ROS to ensure communication fidelity in heterogeneous robot convoys, perform network topology repair and recovery behaviors, and enforce a communication boundary. Submitted a [paper](https://sahiltchaudhary.github.io/publications/comms/) to GVSETS 2025. The various features and behaviors of this framework are as follows:
+    * Spearheaded the development of a **MANET framework** using DDS and ROS to ensure communication fidelity in heterogeneous robot convoys, perform network topology repair and recovery behaviors, and enforce a communication boundary. Submitted a [paper](http://sahiltchaudhary.github.io/files/GVSETS25_CommsAwarePlanning_compressed.pdf) to GVSETS 2025. The various features and behaviors of this framework are as follows:
 
     * <h3>Network Construction and Comms Peeloff</h3>
       * Developed a **novel algorithm to maintain communication fidelity among robots** in a convoy, by extending off an existing work.

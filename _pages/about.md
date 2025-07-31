@@ -16,9 +16,9 @@ I am Sahil Chaudhary, a **Master of Science in Mechanical Engineering graduate f
 
 <h2>My Skillset</h2>
   * <b>Programming Languages:</b> C++, Python, MATLAB, Julia
-  * <b>Tools and Software:</b> Gazebo, Isaac Lab, Matplotlib, PyTorch, NumPy, SKLearn, SolidWorks, Ansys, Fusion 360
+  * <b>Tools and Software:</b> Isaac Lab, Gazebo, Matplotlib, PyTorch, NumPy, SKLearn, SolidWorks, Ansys, Fusion 360
   * <b>Platforms:</b> ROS, Git, Linux, Docker
-  * <b>Knowledge Areas:</b> Controls, Planning, SLAM, Robot Dynamics, Machine Learning, CAD, Mechanical Design, Rapid Prototyping 
+  * <b>Knowledge Areas:</b> Planning, Reinforcement Learning, Controls, SLAM, Robot Dynamics, Machine Learning, CAD, Mechanical Design, Rapid Prototyping 
 
 <h2>My Work and Projects</h2>
 
@@ -42,7 +42,7 @@ I am Sahil Chaudhary, a **Master of Science in Mechanical Engineering graduate f
 Other domains include:
   * <b>SLAM:</b> State estimation methods like [EKF, and LiDAR-IMU time syncing](https://sahiltchaudhary.github.io/portfolio/4_pointLIO/).
   * <b>Machine Learning:</b> Traditional supervised and unsupervised learning techniques, and implementation using PyTorch and SKLearn libraries.
-  * <b>Reinforcement Learning:</b> Value-Based and Policy-Based RL algorithms, and deployment of a [PPO-agent to play a game of Pinball!](https://sahiltchaudhary.github.io/portfolio/2_pinbot/)
+  * <b>Reinforcement Learning:</b> General RL algorithms. In terms of experience, I have trained a [PPO-agent to play a game of Pinball!](https://sahiltchaudhary.github.io/portfolio/2_pinbot/), and also developed and trained policies for [last-mile manipulation tasks in Isaac Lab](https://sahiltchaudhary.github.io/research/).
   * <b>Hardware:</b> Worked on several hardware projects over the ears, including designing payloads for robots. I am a MechE afterall!
 
 Thank you for taking the time to go through my portfolio. I look forward to any opportunities that come my way!
