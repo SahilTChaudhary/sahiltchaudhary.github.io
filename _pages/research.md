@@ -37,6 +37,11 @@ redirect_from:
   </div>
   <figcaption style="text-align: center;"><u><em>Policy trained for turning on a switch</em></u></figcaption>
 
+  <div style="text-align:center">
+  <video src="/images/valve_manipulation.webm" controls="valve_manipulation" style="max-width: 500px;"></video>
+  </div>
+  <figcaption style="text-align: center;"><u><em>Policy trained for rotating a valve</em></u></figcaption>
+
 <figure>
   <img src="/images/biorobotics_logo.png" alt="Biorobotics Logo" style="width:200px;height:200px;">
 </figure>
@@ -51,7 +56,7 @@ redirect_from:
     In this project, the bulk of my work and contributions are as follows:
 
   * <h3>Comms-Aware Planning and MANET framework</h3>
-    * Spearheaded the development of a **MANET framework** using DDS and ROS to ensure communication fidelity in heterogeneous robot convoys, perform network topology repair and recovery behaviors, and enforce a communication boundary. Submitted a [paper](http://sahiltchaudhary.github.io/files/GVSETS25_CommsAwarePlanning_compressed.pdf) to GVSETS 2025. The various features and behaviors of this framework are as follows:
+    * Spearheaded the development of a **MANET framework** using DDS and ROS to ensure communication fidelity in heterogeneous robot convoys, perform network topology repair and recovery behaviors, and enforce a communication boundary. Published a [paper](http://sahiltchaudhary.github.io/files/GVSETS25_CommsAwarePlanning_compressed.pdf) in GVSETS 2025. The various features and behaviors of this framework are as follows:
 
     * <h3>Network Construction and Comms Peeloff</h3>
       * Developed a **novel algorithm to maintain communication fidelity among robots** in a convoy, by extending off an existing work.

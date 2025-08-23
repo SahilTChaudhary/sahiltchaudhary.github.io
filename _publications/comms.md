@@ -16,7 +16,7 @@ excerpt: 'This paper focuses on communications-aware behaviors that enable forma
 
 * Here is the link to the [paper](http://sahiltchaudhary.github.io/files/GVSETS25_CommsAwarePlanning_compressed.pdf).
 
-* <b>Citation (In submission to): </b> 
+* <b>Citation: </b> 
     <p>C. Noren*, <b>S. Chaudhary*</b>, B. Shirose, B. Vundurthy, M. Travers, “Communication Network Construction
 Behaviors for Robotic Convoying,” In Proceedings of the 2025 Ground Vehicle Systems Engineering and Technology
 Symposium (GVSETS), NDIA, Novi, MI, Aug. 12-14, 2025.</p>
