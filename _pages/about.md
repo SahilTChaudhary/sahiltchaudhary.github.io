@@ -12,17 +12,17 @@ Welcome to my website!
 
 Here is my [Resume](http://sahiltchaudhary.github.io/files/Resume.pdf)!
 
-I am Sahil Chaudhary, a **Master of Science in Mechanical Engineering graduate from Carnegie Mellon University, Pittsburgh**. My specialization lies in the vast and exciting field of **Robotics**. In particular, I am interested in all things at the intersection of **Autonomous Decision-Making, Planning and Control**, particularly for autonomous systems and field robotics. I invite you to explore my work and experiences that have shaped and defined my passion for the field.
+I am Sahil Chaudhary, a **Master of Science in Mechanical Engineering graduate from Carnegie Mellon University, Pittsburgh**. My specialization lies in the vast and exciting field of **Robotics**. In particular, I am interested in all things at the intersection of **Autonomous Decision-Making, Planning and Control** and **Physical AI**, particularly for autonomous systems and field robotics. I invite you to explore my work and experiences that have shaped and defined my passion for the field.
 
 <h2>My Skillset</h2>
-  * <b>Programming Languages:</b> C++, Python, MATLAB, Julia
-  * <b>Tools and Software:</b> Isaac Lab, Gazebo, Matplotlib, PyTorch, NumPy, SKLearn, SolidWorks, Ansys, Fusion 360
+  * <b>Programming Languages:</b> C++, Python, MATLAB, Julia, Rust
+  * <b>Tools and Software:</b> Isaac Lab, Gazebo, Unity, PyTorch, SolidWorks, Fusion 360, Ansys
   * <b>Platforms:</b> ROS, Git, Linux, Docker
-  * <b>Knowledge Areas:</b> Planning, Reinforcement Learning, Controls, SLAM, Robot Dynamics, Machine Learning, CAD, Mechanical Design, Rapid Prototyping 
+  * <b>Knowledge Areas:</b> Planning, Reinforcement Learning, IMU-only Navigation and Localization, State Estimation, SLAM, Controls, Robot Dynamics, Machine Learning, CAD, Mechanical Design, Rapid Prototyping 
 
 <h2>My Work and Projects</h2>
 
-* As a **Graduate Research Assistant in the Biorobotics Lab at CMU**, I am working on developing algorithms and features for **Multi-Agent Planning and Controls for a heterogenous system of robots, along with Comms-Aware Planning**.
+* As a **Graduate Research Assistant in the Biorobotics Lab at CMU**, I have developed algorithms and features for **Multi-Agent Planning and Controls for a heterogenous system of robots, along with Comms-Aware Planning**.
 
   *	Spearheaded the development of a **MANET framework** using DDS and ROS to **ensure communication fidelity in heterogeneous robot convoys**, implement network topology repair and recovery behaviors, and enforce a communication boundary.
   *	**Comms-Aware Planning:** Designed a novel algorithm attaining **99% success rate** to maintain communication fidelity over radio among robots in convoy, by formulating a **modified Max-Min Spanning Tree**, and validated the algorithm through extensive hardware testing.

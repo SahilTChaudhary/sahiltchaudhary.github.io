@@ -10,6 +10,18 @@ redirect_from:
 {% include base_path %}
 
 <figure>
+  <img src="/images/juxta-logo.png" alt="Juxta Logo" style="width:300px;height:80px;">
+  </figure>
+* <h2>Juxta Technology, Inc., San Francisco, CA</h2>
+  <h3>Robotics Engineer, AI</h3>
+  <i>September 2025 - Present</i>
+  * Developed learning-based, probabilistic, and filtering methods for drift mitigation in neural-inertial navigation and localization, achieving sub-meter positioning accuracy with ~2 m ATE/RTE
+  *	Built a simulation framework for generating realistic human motion trajectories and synthetic noisy IMU measurements for training and evaluation, and incorporated learning-based data refinement techniques; current synthetic-only training achieves ~3 m ATE/RTE on real-world test trajectories
+
+
+---
+
+<figure>
   <img src="/images/college_of_engineering.png" alt="COE Logo" style="width:300px;height:80px;">
   </figure>
 * <h2>Carnegie Mellon University's College of Engineering, Pittsburgh, PA</h2>
